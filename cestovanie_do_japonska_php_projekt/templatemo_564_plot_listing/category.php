@@ -55,8 +55,8 @@ https://templatemo.com/tm-564-plot-listing
       <div class="row">
         <div class="col-lg-8">
           <div class="top-text header-text">
-            <h6>Categories with Simple Tabs</h6>
-            <h2>We have a wide range of business categories for you</h2>
+            <h6>Kategórie Japonska</h6>
+            <h2>Prehľad kategórií pre cestovanie po Japonsku</h2>
           </div>
         </div>
       </div>
@@ -74,30 +74,40 @@ https://templatemo.com/tm-564-plot-listing
               <div class="row">
                 <div class="col-lg-12">
                   <div class="menu">
+
                     <div class="first-thumb active">
                       <div class="thumb">
-                        <span class="icon"><img src="assets/images/search-icon-01.png" alt=""><h4>Apartments</h4></span>    
+                        <span class="icon"><img src="assets/images/search-icon-01.png" alt=""><h4>Destinácie</h4></span>    
                       </div>
                     </div>
+
                     <div>
+
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-02.png" alt=""><h4>Food &amp; Life</h4></span>
+                        <span class="icon"><img src="assets/images/search-icon-02.png" alt=""><h4>Gastronómia</h4></span>
                       </div>
+
                     </div>
                     <div>
+
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-03.png" alt=""><h4>Cars</h4></span>
+                        <span class="icon"><img src="assets/images/search-icon-03.png" alt=""><h4>Doprava</h4></span>
                       </div>
+
                     </div>
                     <div>
+
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-04.png" alt=""><h4>Shopping</h4></span>
+                        <span class="icon"><img src="assets/images/search-icon-04.png" alt=""><h4>Ubytovanie</h4></span>
                       </div>
+
                     </div>
                     <div class="last-thumb">
+
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-05.png" alt=""><h4>Traveling</h4></span>
+                        <span class="icon"><img src="assets/images/search-icon-05.png" alt=""><h4>Kultúra</h4></span>
                       </div>
+
                     </div>
                   </div>
                 </div> 
@@ -112,7 +122,7 @@ https://templatemo.com/tm-564-plot-listing
                                 <div class="row">
                                   <div class="col-lg-6">
                                     <div class="top-icon">
-                                      <span class="icon"><img src="assets/images/search-icon-01.png" alt=""><h4>Apartments</h4></span> 
+                                      <span class="icon"><img src="assets/images/search-icon-01.png" alt=""><h4>Destinácie</h4></span> 
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
@@ -165,7 +175,7 @@ https://templatemo.com/tm-564-plot-listing
                                 <div class="row">
                                   <div class="col-lg-6">
                                     <div class="top-icon">
-                                      <span class="icon"><img src="assets/images/search-icon-02.png" alt=""><h4>Food &amp; Life</h4></span> 
+                                      <span class="icon"><img src="assets/images/search-icon-02.png" alt=""><h4>Gastronómia</h4></span> 
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
@@ -221,7 +231,7 @@ https://templatemo.com/tm-564-plot-listing
                                 <div class="row">
                                   <div class="col-lg-6">
                                     <div class="top-icon">
-                                      <span class="icon"><img src="assets/images/search-icon-03.png" alt=""><h4>Cars</h4></span> 
+                                      <span class="icon"><img src="assets/images/search-icon-03.png" alt=""><h4>Doprava</h4></span> 
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
@@ -274,7 +284,7 @@ https://templatemo.com/tm-564-plot-listing
                                 <div class="row">
                                   <div class="col-lg-6">
                                     <div class="top-icon">
-                                      <span class="icon"><img src="assets/images/search-icon-04.png" alt=""><h4>Shopping</h4></span> 
+                                      <span class="icon"><img src="assets/images/search-icon-04.png" alt=""><h4>Ubytovanie</h4></span> 
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
@@ -327,7 +337,7 @@ https://templatemo.com/tm-564-plot-listing
                                 <div class="row">
                                   <div class="col-lg-6">
                                     <div class="top-icon">
-                                      <span class="icon"><img src="assets/images/search-icon-05.png" alt=""><h4>Traveling</h4></span> 
+                                      <span class="icon"><img src="assets/images/search-icon-05.png" alt=""><h4>Kultúra</h4></span> 
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
@@ -391,6 +401,8 @@ https://templatemo.com/tm-564-plot-listing
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/tabs.js"></script>
+
 
 </body>
 

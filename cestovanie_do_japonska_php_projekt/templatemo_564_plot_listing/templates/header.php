@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="sk">
-<head>
-    <meta charset="UTF-8">
-    <title>Moja stránka</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
 <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
       <div class="row">
@@ -22,7 +13,7 @@
               <li><a href="category.php">Category</a></li>
               <li><a href="listing.php" class="active">Listing</a></li>
               <li><a href="contact.php">Contact Us</a></li> 
-              <li><div class="main-white-button"><a href="#"><i class="fa fa-plus"></i> Add Your Listing</a></div></li> 
+              <li><div class="main-white-button"><a href="add-listing.php"><i class="fa fa-plus"></i> Add Your Listing</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
