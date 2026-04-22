@@ -15,10 +15,10 @@
             <div class="row">
               <div class="col-lg-6 col-sm-6">
                 <ul>
-                  <li><a href="#">Categories</a></li>
-                  <li><a href="#">Reviews</a></li>
-                  <li><a href="#">Listing</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="category.php">Categories</a></li>
+                  <li><a href="reviews.php">Reviews</a></li>
+                  <li><a href="listing.php">Listing</a></li>
+                  <li><a href="contact.php">Contact Us</a></li>
                 </ul>
               </div>
               <div class="col-lg-6">
