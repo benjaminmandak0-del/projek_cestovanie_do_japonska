@@ -52,7 +52,8 @@ if (isset($_POST['title'])) {
 
     $stmt->execute();
 
-    echo "Listing sikeresen mentve!";
+    header("Location: thank-you.php");
+    exit;
 }
 
 
@@ -72,6 +73,7 @@ if (isset($_POST['surname'])) {
     $stmt->bind_param("ssss", $name, $surname, $email, $message);
     $stmt->execute();
 
-    echo "Üzenet elküldve!";
+    header("Location: thank-you.php");
+    exit;
 }
 ?>
