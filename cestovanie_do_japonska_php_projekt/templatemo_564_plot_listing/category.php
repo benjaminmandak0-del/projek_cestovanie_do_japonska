@@ -127,7 +127,7 @@ https://templatemo.com/tm-564-plot-listing
                                   </div>
                                   <div class="col-lg-6">
                                     <div class="main-white-button">
-                                      <a href="#"><i class="fa fa-plus"></i> Check Our Listings</a>
+                                      <a href="add-listing.php"><i class="fa fa-plus"></i> Add Listing</a>
                                     </div>
                                   </div>
                                 </div>
@@ -137,14 +137,14 @@ https://templatemo.com/tm-564-plot-listing
                               <div class="description">
                                 <div class="row">
                                   <div class="col-lg-9">
-                                    <h4>Description for Apartments</h4>
-                                    <p>If you feel that Plot Listing HTML template is useful, please <a rel="nofollow" href="https://www.paypal.me/templatemo" target="_blank">support us</a> a little via PayPal. You are allowed to use this template for your commercial websites. You are NOT allowed to redistribute this template ZIP file on any Free CSS collection websites. You may contact us for more information. Thank you.</p>
+                                    <h4>Objav najkrajšie miesta Japonska</h4>
+                                    <p>Japonsko je krajina plná kontrastov, kde sa moderné technológie stretávajú s bohatou históriou a tradíciami. Tokio, hlavné mesto Japonska, ponúka návštevníkom nekonečné množstvo atrakcií – od vysokých mrakodrapov a rušných ulíc Shibuye až po pokojné parky a tradičné svätyne. Osaka je známa svojou energiou, zábavou a výbornou gastronómiou, zatiaľ čo Kjóto očarí historickými chrámami, bambusovými lesmi a nádhernými záhradami. Každé z týchto miest má jedinečný charakter a ponúka nezabudnuteľný zážitok.</p>
                                   </div>
                                   <div class="col-lg-3">
                                     <div class="text-icon">
-                                      <h4><img src="assets/images/listing-icon-heading.png" alt=""> Total Listings</h4>
+                                      <h4><img src="assets/images/listing-icon-heading.png" alt=""> Cestovateľské štatistiky</h4>
                                     </div>
-                                    <span class="list-item">This Week: 200 Listings &amp; 150 Sales<br>This Month: 1,800 Listings &amp; 1,560 Sales<br>This Year: 16,000 Listings &amp; 14,000 Sales</span>
+                                    <span class="list-item">Tento týždeň: 500+ nových návštevníkov stránky<br>Tento mesiac: 5 000+ plánovaných ciest<br>Tento rok: 50 000+ spokojných cestovateľov</span>
                                   </div>
                                 </div>
                               </div>
@@ -153,11 +153,11 @@ https://templatemo.com/tm-564-plot-listing
                               <div class="general-info">
                                 <div class="row">
                                   <div class="col-lg-12">
-                                    <h4>General Info. about Apartments</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ak incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravidat doerski. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-                                    <span class="list-item">* Listing should have all the proper documents before being checked in.
-                                    <br>** Listing will be checked by our team members.
-                                    <br>*** After being sold, it should imediately be removed from our site and properly monitored.</span>
+                                    <h4>Prečo navštíviť tieto miesta?</h4>
+                                    <p>Každá destinácia v Japonsku prináša niečo výnimočné. Môžeš objavovať futuristické štvrte, obdivovať historické pamiatky alebo relaxovať v prírode. Cesta po Japonsku je dobrodružstvo plné objavovania nových kultúrnych zážitkov a nádherných miest.</p>
+                                    <span class="list-item">Pred cestou si skontroluj platnosť pasu a potrebné cestovné dokumenty.
+                                    <br>Odporúčame rezervovať letenky a ubytovanie vopred pre lepšie ceny.
+                                    <br>Nezabudni si naplánovať dopravu medzi mestami a atrakciami.</span>
                                   </div>
                                 </div>
                               </div>
@@ -180,7 +180,7 @@ https://templatemo.com/tm-564-plot-listing
                                   </div>
                                   <div class="col-lg-6">
                                     <div class="main-white-button">
-                                      <a href="#"><i class="fa fa-plus"></i> Check Our Listings</a>
+                                      <a href="add-listing.php"><i class="fa fa-plus"></i> Add Listing</a>
                                     </div>
                                   </div>
                                 </div>
@@ -190,17 +190,17 @@ https://templatemo.com/tm-564-plot-listing
                               <div class="description">
                                 <div class="row">
                                   <div class="col-lg-9">
-                                    <h4>Description for Food and Life</h4>
-                                    <p>Plot Listing template is a responsive website layout that included four HTML pages. Please tell your friends about TemplateMo website. You can download and apply this template for your dynamic CMS websites.</p>
+                                    <h4>Ochutnaj pravé chute Japonska</h4>
+                                    <p>Japonská kuchyňa patrí medzi najobľúbenejšie na svete a je známa svojou čerstvosťou, kvalitou a estetickým servírovaním. Medzi najznámejšie jedlá patrí sushi, ramen, tempura, udon či yakitori. Každý región Japonska má svoje vlastné špeciality – v Osake môžeš ochutnať takoyaki a okonomiyaki, v Tokiu čerstvé sushi a v Kjóte tradičné jedlá kaiseki. Jedlo v Japonsku nie je len o chuti, ale aj o zážitku a tradícii.</p>
                                     <br>
-                                    <p><strong>Did you know?</strong>
-                                    <br>You can get the best free HTML templates on Too CSS blog. Visit the blog pages and explore fresh and latest website templates.</p>
+                                    
+                                    
                                   </div>
                                   <div class="col-lg-3">
                                     <div class="text-icon">
-                                      <h4><img src="assets/images/listing-icon-heading.png" alt=""> Total Listings</h4>
+                                      <h4><img src="assets/images/listing-icon-heading.png" alt=""> Užitočné informácie pre gurmánov</h4>
                                     </div>
-                                    <span class="list-item">This Week: 124 Listings &amp; 84 Sales<br>This Month: 1,040 Listings &amp; 720 Sales<br>This Year: 10,640 Listings &amp; 9,600 Sales</span>
+                                    <span class="list-item">Ochutnaj miestne špeciality v každom meste.<br>Rezervácia v populárnych reštauráciách je odporúčaná.<br>Nezabudni vyskúšať tradičné japonské dezerty.</span>
                                   </div>
                                 </div>
                               </div>
@@ -209,11 +209,11 @@ https://templatemo.com/tm-564-plot-listing
                               <div class="general-info">
                                 <div class="row">
                                   <div class="col-lg-12">
-                                    <h4>General Info</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ak incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravidat doerski. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-                                    <span class="list-item">* Listing should have all the proper documents before being checked in.
-                                    <br>** Listing will be checked by our team members.
-                                    <br>*** After being sold, it should imediately be removed from our site and properly monitored.</span>
+                                    <h4>Jedlo ako kultúrny zážitok</h4>
+                                    <p>Reštaurácie v Japonsku venujú veľkú pozornosť detailom a kvalite ingrediencií. Ochutnať miestne jedlá je dôležitou súčasťou každej cesty a pomáha lepšie spoznať kultúru krajiny..</p>
+                                    <span class="list-item">Tento týždeň: 500+ odporúčaných jedál
+                                    <br>Tento mesiac: 4 000+ návštev reštaurácií
+                                    <br>Tento rok: 35 000+ ochutnaných jedál</span>
                                   </div>
                                 </div>
                               </div>
@@ -236,7 +236,7 @@ https://templatemo.com/tm-564-plot-listing
                                   </div>
                                   <div class="col-lg-6">
                                     <div class="main-white-button">
-                                      <a href="#"><i class="fa fa-plus"></i> Check Our Listings</a>
+                                      <a href="add-listing.php"><i class="fa fa-plus"></i> Add Listing</a>
                                     </div>
                                   </div>
                                 </div>
@@ -246,14 +246,14 @@ https://templatemo.com/tm-564-plot-listing
                               <div class="description">
                                 <div class="row">
                                   <div class="col-lg-9">
-                                    <h4>Description about cars</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ak incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravidat doerski. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+                                    <h4>Cestuj rýchlo a pohodlne</h4>
+                                    <p>Japonsko má jeden z najmodernejších a najspoľahlivejších dopravných systémov na svete. Slávne rýchlovlaky Shinkansen dokážu cestovať vysokou rýchlosťou a spájajú veľké mestá v rekordnom čase. Mestská doprava v Tokiu, Osake či Kjóte zahŕňa metro, autobusy a miestne vlaky, ktoré sú známe svojou čistotou a presnosťou. Vďaka jasnému označeniu a mapám je cestovanie jednoduché aj pre turistov.</p>
                                   </div>
                                   <div class="col-lg-3">
                                     <div class="text-icon">
-                                      <h4><img src="assets/images/listing-icon-heading.png" alt=""> Total Listings</h4>
+                                      <h4><img src="assets/images/listing-icon-heading.png" alt="">Užitočné informácie o doprave</h4>
                                     </div>
-                                    <span class="list-item">This Week: 800 Listings &amp; 400 Sales<br>This Month: 1,600 Listings &amp; 1,200 Sales<br>This Year: 14,000 Listings &amp; 12,000 Sales</span>
+                                    <span class="list-item">Kúp si Japan Rail Pass pre lacnejšie cestovanie.<br>Sleduj cestovné poriadky vlakov a metra.<br>Priprav si IC kartu na jednoduché platenie.</span>
                                   </div>
                                 </div>
                               </div>
@@ -262,11 +262,11 @@ https://templatemo.com/tm-564-plot-listing
                               <div class="general-info">
                                 <div class="row">
                                   <div class="col-lg-12">
-                                    <h4>General Info. about cars</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ak incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravidat doerski. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-                                    <span class="list-item">* Listing should have all the proper documents before being checked in.
-                                    <br>** Listing will be checked by our team members.
-                                    <br>*** After being sold, it should imediately be removed from our site and properly monitored.</span>
+                                    <h4>Bez stresu po celej krajine</h4>
+                                    <p>S Japan Rail Pass môžeš cestovať výhodnejšie a navštíviť viac miest počas jednej dovolenky. Japonská doprava je ideálna pre pohodlné a bezpečné cestovanie bez zbytočného stresu.</p>
+                                    <span class="list-item">Tento týždeň: 800+ jázd vlakom
+                                    <br>Tento mesiac: 6 500+ ciest metrom
+                                    <br>Tento rok: 50 000+ kilometrov precestovaných</span>
                                   </div>
                                 </div>
                               </div>
@@ -289,7 +289,7 @@ https://templatemo.com/tm-564-plot-listing
                                   </div>
                                   <div class="col-lg-6">
                                     <div class="main-white-button">
-                                      <a href="#"><i class="fa fa-plus"></i> Check Our Listings</a>
+                                      <a href="add-listing.php"><i class="fa fa-plus"></i> Add Listing</a>
                                     </div>
                                   </div>
                                 </div>
@@ -299,14 +299,14 @@ https://templatemo.com/tm-564-plot-listing
                               <div class="description">
                                 <div class="row">
                                   <div class="col-lg-9">
-                                    <h4>Description about Shopping</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ak incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravidat doerski. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+                                    <h4>Komfort a tradičný zážitok</h4>
+                                    <p>Japonsko ponúka širokú škálu možností ubytovania pre všetkých cestovateľov. Moderné hotely v centre miest poskytujú vysoký komfort, moderné vybavenie a krásny výhľad na mesto. Ak chceš zažiť tradičnú atmosféru, môžeš si vybrať ryokan – tradičný japonský hostinec s tatami izbami, futonmi a miestnou kuchyňou. Niektoré ryokany ponúkajú aj onsen, tradičné horúce kúpele.</p>
                                   </div>
                                   <div class="col-lg-3">
                                     <div class="text-icon">
-                                      <h4><img src="assets/images/listing-icon-heading.png" alt=""> Total Listings</h4>
+                                      <h4><img src="assets/images/listing-icon-heading.png" alt=""> Užitočné informácie o ubytovaní</h4>
                                     </div>
-                                    <span class="list-item">This Week: 150 Listings &amp; 140 Sales<br>This Month: 1,500 Listings &amp; 1,100 Sales<br>This Year: 15,000 Listings &amp; 14,000 Sales</span>
+                                    <span class="list-item">Rezervuj hotel alebo ryokan vopred.<br>Skontroluj lokalitu a dostupnosť dopravy.<br>Vyber si ubytovanie podľa svojho rozpočtu.</span>
                                   </div>
                                 </div>
                               </div>
@@ -315,11 +315,11 @@ https://templatemo.com/tm-564-plot-listing
                               <div class="general-info">
                                 <div class="row">
                                   <div class="col-lg-12">
-                                    <h4>General Info. for Shopping</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ak incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravidat doerski. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-                                    <span class="list-item">* Listing should have all the proper documents before being checked in.
-                                    <br>** Listing will be checked by our team members.
-                                    <br>*** After being sold, it should imediately be removed from our site and properly monitored.</span>
+                                    <h4>Vyber si podľa svojho štýlu</h4>
+                                    <p>Či už hľadáš luxusný hotel, cenovo dostupné ubytovanie alebo autentický japonský zážitok, Japonsko ponúka možnosti pre každého návštevníka.</p>
+                                    <span class="list-item">Tento týždeň: 200+ rezervácií
+                                    <br>Tento mesiac: 1 500+ rezervovaných nocí
+                                    <br>Tento rok: 12 000+ spokojných hostí</span>
                                   </div>
                                 </div>
                               </div>
@@ -342,7 +342,7 @@ https://templatemo.com/tm-564-plot-listing
                                   </div>
                                   <div class="col-lg-6">
                                     <div class="main-white-button">
-                                      <a href="#"><i class="fa fa-plus"></i> Check Our Listings</a>
+                                      <a href="add-listing.php"><i class="fa fa-plus"></i> Add Listing</a>
                                     </div>
                                   </div>
                                 </div>
@@ -352,14 +352,14 @@ https://templatemo.com/tm-564-plot-listing
                               <div class="description">
                                 <div class="row">
                                   <div class="col-lg-9">
-                                    <h4>Description of Traveling</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ak incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravidat doerski. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+                                    <h4>Spoznaj tradície a históriu</h4>
+                                    <p>Japonská kultúra je bohatá na tradície, históriu a jedinečné zvyky, ktoré sa zachovali po stáročia. Navštív starobylé chrámy, svätyne a historické štvrte, ktoré rozprávajú príbehy minulosti. V Kjóte môžeš obdivovať tradičné gejše, v Nare nakŕmiť jelene pri chrámoch a v Tokiu zažiť spojenie modernej a tradičnej kultúry.</p>
                                   </div>
                                   <div class="col-lg-3">
                                     <div class="text-icon">
-                                      <h4><img src="assets/images/listing-icon-heading.png" alt=""> Total Listings</h4>
+                                      <h4><img src="assets/images/listing-icon-heading.png" alt="">Užitočné kultúrne tipy</h4>
                                     </div>
-                                    <span class="list-item">This Week: 200 Listings &amp; 120 Sales<br>This Month: 1,400 Listings &amp; 900 Sales<br>This Year: 14,000 Listings &amp; 12,000 Sales</span>
+                                    <span class="list-item">Rešpektuj miestne tradície a pravidlá.<br>Pred vstupom do chrámov sa správaj ticho a úctivo.<br>Vyskúšaj tradičné aktivity ako čajový obrad.</span>
                                   </div>
                                 </div>
                               </div>
@@ -368,11 +368,11 @@ https://templatemo.com/tm-564-plot-listing
                               <div class="general-info">
                                 <div class="row">
                                   <div class="col-lg-12">
-                                    <h4>General Info. about Traveling</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ak incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravidat doerski. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-                                    <span class="list-item">* Listing should have all the proper documents before being checked in.
-                                    <br>** Listing will be checked by our team members.
-                                    <br>*** After being sold, it should imediately be removed from our site and properly monitored.</span>
+                                    <h4>Nezabudnuteľné zážitky</h4>
+                                    <p>Zaži tradičný čajový obrad, obleč si kimono alebo sa zúčastni na jednom z mnohých festivalov. Kultúra Japonska ponúka jedinečné momenty, ktoré si zapamätáš na celý život.</p>
+                                    <span class="list-item">Tento týždeň: 100+ navštívených chrámov
+                                    <br>Tento mesiac: 900+ kultúrnych zážitkov
+                                    <br>Tento rok: 8 000+ objavených tradícií</span>
                                   </div>
                                 </div>
                               </div>
