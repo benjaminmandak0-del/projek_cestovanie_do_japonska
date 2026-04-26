@@ -15,44 +15,7 @@
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
-    <style>
-        .hero {
-            background: url('assets/images/osaka-hero.jpg') center/cover no-repeat;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            color: white;
-            position: relative;
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0,0,0,0.55);
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .section-title {
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .hotel-card img {
-            height: 220px;
-            object-fit: cover;
-        }
-
-        .badge-city {
-            background: #ff5a5f;
-            font-size: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/city-pages.css">
 </head>
 
 <body>
@@ -60,7 +23,7 @@
 <?php include 'templates/header.php'; ?>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero hero-osaka">
     <div class="container hero-content">
         <span class="badge badge-city mb-2">Japan 🇯🇵</span>
         <h1 class="display-4 fw-bold">Osaka</h1>
