@@ -21,6 +21,5 @@
             <!-- ***** Menu End ***** -->
           </nav>
         </div>
-      </div>
     </div>
   </header>

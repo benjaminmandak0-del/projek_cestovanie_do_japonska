@@ -5,3 +5,36 @@ body { font-family: 'Poppins', sans-serif; }
 .listing-card-hover:hover { box-shadow: 0 20px 40px rgba(0,0,0,0.1); transform: translateY(-4px); }
 .heart { transition: all 0.3s ease; }
 .heart.liked { color: #ef4444; transform: scale(1.2); }
+
+.hero {
+    background: url('../images/banner-bg.jpg') center/cover no-repeat;
+    height: 300px;
+    display:flex;
+    align-items:center;
+    color:white;
+}
+.hero h1 {font-weight:700;}
+
+.filter-btns button {
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.hotel-card {
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+}
+
+.hotel-card img {
+    height:220px;
+    object-fit:cover;
+    width:100%;
+}
+
+.price {
+    color:#e74c3c;
+    font-weight:bold;
+    font-size:22px;
+}

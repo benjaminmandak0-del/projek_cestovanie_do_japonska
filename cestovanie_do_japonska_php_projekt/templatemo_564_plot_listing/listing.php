@@ -1,146 +1,136 @@
+<?php include 'templates/header.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <head>
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-plot-listing.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/listing.css">
 
-    <title>Plotlist - Listing HTML5 Template</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-plot-listing.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-<!--
-
-TemplateMo 564 Plot Listing
-
-https://templatemo.com/tm-564-plot-listing
-
--->
-  </head>
+  <?php include 'templates/header.php'; ?>
+</head>
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
-
-  <!-- ***** Header Area Start ***** -->
-  <?php include 'templates/header.php'; ?>
-  <!-- ***** Header Area End ***** -->
-
-  <div class="page-heading">
+<!-- HERO -->
+<section class="hero">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="top-text header-text">
-            <h6>Keep in touch with us</h6>
-            <h2>Feel free to send us a message about your business needs</h2>
-          </div>
-        </div>
-      </div>
+        <h1>Find the Perfect Stay in Japan</h1>
+        <p>Tokyo, Osaka & Kyoto hotels in one place</p>
     </div>
-  </div>
+</section>
 
-  <div class="contact-page">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="inner-content">
-            <div class="row">
-
-              <!-- Google Map -->
-              <div class="col-lg-6">
-                <div id="map">
-                  <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="650px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-              </div>
-
-              <!-- Contact Form -->
-              <div class="col-lg-6 align-self-center">
-                <form id="contact" action="process.php" method="post">
-                  <div class="row">
-
-                    <!-- Name -->
-                    <div class="col-lg-6">
-                      <fieldset>
-                        <input type="text" name="name" id="name" placeholder="Name" autocomplete="on" required>
-                      </fieldset>
-                    </div>
-
-                    <!-- Surname -->
-                    <div class="col-lg-6">
-                      <fieldset>
-                        <input type="text" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
-                      </fieldset>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="col-lg-12">
-                      <fieldset>
-                        <input type="email" name="email" id="email" placeholder="Your Email" required>
-                      </fieldset>
-                    </div>
-
-                    <!-- Options -->
-                    <div class="col-lg-12">
-                      <ul>
-                        <li><input type="checkbox" name="option1" value="cars"><span>Cars</span></li>
-                        <li><input type="checkbox" name="option2" value="apartments"><span>Apartments</span></li>
-                        <li><input type="checkbox" name="option3" value="shopping"><span>Shopping</span></li>
-                        <li><input type="checkbox" name="option4" value="food"><span>Food &amp; Life</span></li>
-                        <li><input type="checkbox" name="option5" value="traveling"><span>Traveling</span></li>
-                      </ul>
-                    </div>
-
-                    <!-- Message -->
-                    <div class="col-lg-12">
-                      <fieldset>
-                        <textarea name="message" class="form-control" id="message" placeholder="Message" required></textarea>  
-                      </fieldset>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <div class="col-lg-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="main-button">
-                          <i class="fa fa-paper-plane"></i> Send Message
-                        </button>
-                      </fieldset>
-                    </div>
-
-                  </div>
-                </form>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- FILTER -->
+<div class="container text-center my-4 filter-btns">
+    <button class="btn btn-danger" onclick="filterHotels('all')">All</button>
+    <button class="btn btn-outline-danger" onclick="filterHotels('tokyo')">Tokyo</button>
+    <button class="btn btn-outline-danger" onclick="filterHotels('osaka')">Osaka</button>
+    <button class="btn btn-outline-danger" onclick="filterHotels('kyoto')">Kyoto</button>
 </div>
 
-<?php include 'templates/footer.php'; ?>
+<!-- LISTINGS -->
+<div class="container">
+
+    <!-- TOKYO -->
+    <div class="hotel tokyo hotel-card row g-0">
+        <div class="col-md-5">
+            <img src="assets/images/tokyo1.jpg">
+        </div>
+        <div class="col-md-7 p-4">
+            <h4>Park Hotel Tokyo</h4>
+            <p>Art-inspired luxury hotel with stunning city views.</p>
+            <div class="price">$320 / night</div>
+        </div>
+    </div>
+
+    <div class="hotel tokyo hotel-card row g-0">
+        <div class="col-md-5">
+            <img src="assets/images/tokyo2.jpg">
+        </div>
+        <div class="col-md-7 p-4">
+            <h4>Hotel Gracery Shinjuku</h4>
+            <p>Famous hotel with Godzilla head in Shinjuku.</p>
+            <div class="price">$210 / night</div>
+        </div>
+    </div>
+
+    <!-- OSAKA -->
+    <div class="hotel osaka hotel-card row g-0">
+        <div class="col-md-5">
+            <img src="assets/images/osaka1.jpg">
+        </div>
+        <div class="col-md-7 p-4">
+            <h4>Hotel Universal Port</h4>
+            <p>Perfect hotel next to Universal Studios Japan.</p>
+            <div class="price">$180 / night</div>
+        </div>
+    </div>
+
+    <div class="hotel osaka hotel-card row g-0">
+        <div class="col-md-5">
+            <img src="assets/images/osaka2.jpg">
+        </div>
+        <div class="col-md-7 p-4">
+            <h4>Swissôtel Nankai Osaka</h4>
+            <p>Luxury hotel in Osaka city center.</p>
+            <div class="price">$260 / night</div>
+        </div>
+    </div>
+
+    <!-- KYOTO -->
+    <div class="hotel kyoto hotel-card row g-0">
+        <div class="col-md-5">
+            <img src="assets/images/kyoto1.jpg">
+        </div>
+        <div class="col-md-7 p-4">
+            <h4>Gion Hatanaka</h4>
+            <p>Traditional ryokan in historic Gion district.</p>
+            <div class="price">$450 / night</div>
+        </div>
+    </div>
+
+    <div class="hotel kyoto hotel-card row g-0">
+        <div class="col-md-5">
+            <img src="assets/images/kyoto2.jpg">
+        </div>
+        <div class="col-md-7 p-4">
+            <h4>Hotel The Celestine Kyoto Gion</h4>
+            <p>Modern hotel blending tradition and comfort.</p>
+            <div class="price">$380 / night</div>
+        </div>
+    </div>
+
+</div>
+
+<!-- FILTER SCRIPT -->
+<script>
+function filterHotels(city) {
+    let hotels = document.querySelectorAll('.hotel');
+
+    hotels.forEach(hotel => {
+        if (city === 'all') {
+            hotel.style.display = 'flex';
+        } else {
+            if (hotel.classList.contains(city)) {
+                hotel.style.display = 'flex';
+            } else {
+                hotel.style.display = 'none';
+            }
+        }
+    });
+}
+</script>
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <?php include 'templates/footer.php'; ?>
 
 
   <!-- Scripts -->
@@ -152,5 +142,5 @@ https://templatemo.com/tm-564-plot-listing
   <script src="assets/js/custom.js"></script>
 
 </body>
-
 </html>
+
