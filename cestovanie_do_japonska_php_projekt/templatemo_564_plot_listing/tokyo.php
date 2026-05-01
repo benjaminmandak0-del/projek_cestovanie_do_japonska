@@ -23,17 +23,17 @@
 <section class="hero hero-tokyo">
     <div class="container hero-content">
         <h1 class="display-4 fw-bold">Tokyo</h1>
-        <p class="lead">A futuristic city where tradition meets innovation</p>
+        <p class="lead">Futuristické mesto, kde sa tradícia stretáva s inováciou</p>
     </div>
 </section>
 
 <div class="container py-5">
 
     <div class="text-center mb-5">
-        <h2>About Tokyo</h2>
+        <h2>O Tokiu</h2>
         <p class="text-muted">
-            Tokyo is Japan’s capital, a massive metropolis known for technology,
-            fashion, culture, and iconic districts like Shibuya and Shinjuku.
+            Tokyo je hlavné mesto Japonska, obrovská metropola známa technológiami,
+            módou, kultúrou a ikonickými štvrťami ako Shibuya a Shinjuku.
         </p>
     </div>
 
@@ -49,7 +49,7 @@
         </div>
     </div>
 
-    <h3 class="text-center mb-4">Recommended Hotels</h3>
+    <h3 class="text-center mb-4">Odporúčané hotely</h3>
 
     <div class="row">
 
@@ -61,7 +61,7 @@
                         Park Hotel Tokyo
                     </h5>
                     <p class="text-muted">
-                        Artistic hotel with stunning city views and modern design.
+                        Umelecký hotel s úžasným výhľadom na mesto a moderným dizajnom.
                     </p>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                         Hotel Gracery Shinjuku
                     </h5>
                     <p class="text-muted">
-                        Famous hotel located in Shinjuku, home of the Godzilla head.
+                        Slávny hotel v Shinjuku, domov hlavy Godzilly.
                     </p>
                 </div>
             </div>

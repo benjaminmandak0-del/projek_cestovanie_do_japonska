@@ -22,14 +22,14 @@
 <!-- HERO -->
 <section class="hero">
     <div class="container">
-        <h1>Find the Perfect Stay in Japan</h1>
-        <p>Tokyo, Osaka & Kyoto hotels in one place</p>
+<h1>Nájdite dokonalé ubytovanie v Japonsku</h1>
+        <p>Hotely v Tokiu, Osake a Kjóte na jednom mieste</p>
     </div>
 </section>
 
 <!-- FILTER -->
 <div class="container text-center my-4 filter-btns">
-    <button class="btn btn-danger" onclick="filterHotels('all')">All</button>
+<button class="btn btn-danger" onclick="filterHotels('all')">Všetky</button>
     <button class="btn btn-outline-danger" onclick="filterHotels('tokyo')">Tokyo</button>
     <button class="btn btn-outline-danger" onclick="filterHotels('osaka')">Osaka</button>
     <button class="btn btn-outline-danger" onclick="filterHotels('kyoto')">Kyoto</button>
@@ -41,69 +41,69 @@
     <!-- TOKYO -->
     <div class="hotel tokyo hotel-card row g-0">
         <div class="col-md-5">
-            <img src="assets/images/tokyo1.jpg">
+            <img src="assets/images/Park Hotel Tokyo.jpg">
         </div>
         <div class="col-md-7 p-4">
             <h4>Park Hotel Tokyo</h4>
-            <p>Art-inspired luxury hotel with stunning city views.</p>
-            <div class="price">$320 / night</div>
+<p>Luxusný hotel inšpirovaný umením s úžasným výhľadom na mesto.</p>
+            <div class="price">$320 / noc</div>
         </div>
     </div>
 
     <div class="hotel tokyo hotel-card row g-0">
         <div class="col-md-5">
-            <img src="assets/images/tokyo2.jpg">
+            <img src="assets/images/Hotel Gracery Shinjuku.webp">
         </div>
         <div class="col-md-7 p-4">
             <h4>Hotel Gracery Shinjuku</h4>
-            <p>Famous hotel with Godzilla head in Shinjuku.</p>
-            <div class="price">$210 / night</div>
+<p>Slávny hotel s hlavou Godzilly v Shinjuku.</p>
+            <div class="price">$210 / noc</div>
         </div>
     </div>
 
     <!-- OSAKA -->
     <div class="hotel osaka hotel-card row g-0">
         <div class="col-md-5">
-            <img src="assets/images/osaka1.jpg">
+            <img src="assets/images/Hotel Universal Port.webp">
         </div>
         <div class="col-md-7 p-4">
             <h4>Hotel Universal Port</h4>
-            <p>Perfect hotel next to Universal Studios Japan.</p>
-            <div class="price">$180 / night</div>
+<p>Dokonalý hotel vedľa Universal Studios Japan.</p>
+            <div class="price">$180 / noc</div>
         </div>
     </div>
 
     <div class="hotel osaka hotel-card row g-0">
         <div class="col-md-5">
-            <img src="assets/images/osaka2.jpg">
+            <img src="assets/images/Swissotel Nankai Osaka.webp">
         </div>
         <div class="col-md-7 p-4">
             <h4>Swissôtel Nankai Osaka</h4>
-            <p>Luxury hotel in Osaka city center.</p>
-            <div class="price">$260 / night</div>
+<p>Luxusný hotel v centre Osaky.</p>
+            <div class="price">$260 / noc</div>
         </div>
     </div>
 
     <!-- KYOTO -->
     <div class="hotel kyoto hotel-card row g-0">
         <div class="col-md-5">
-            <img src="assets/images/kyoto1.jpg">
+            <img src="assets/images/Park Hyatt Kyoto.jpg">
         </div>
         <div class="col-md-7 p-4">
-            <h4>Gion Hatanaka</h4>
-            <p>Traditional ryokan in historic Gion district.</p>
-            <div class="price">$450 / night</div>
+            <h4>Park Hyatt Kyoto</h4>
+<p>Tradičný ryokan v historickej štvrti Gion.</p>
+            <div class="price">$450 / noc</div>
         </div>
     </div>
 
     <div class="hotel kyoto hotel-card row g-0">
         <div class="col-md-5">
-            <img src="assets/images/kyoto2.jpg">
+            <img src="assets/images/The Celestine Kyoto Gion.webp">
         </div>
         <div class="col-md-7 p-4">
             <h4>Hotel The Celestine Kyoto Gion</h4>
-            <p>Modern hotel blending tradition and comfort.</p>
-            <div class="price">$380 / night</div>
+<p>Moderný hotel spájajúci tradíciu a pohodlie.</p>
+            <div class="price">$380 / noc</div>
         </div>
     </div>
 

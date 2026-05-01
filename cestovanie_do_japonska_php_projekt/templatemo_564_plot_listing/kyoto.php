@@ -23,17 +23,17 @@
 <section class="hero hero-kyoto">
     <div class="container hero-content">
         <h1 class="display-4 fw-bold">Kyoto</h1>
-        <p class="lead">The cultural heart of Japan</p>
+<p class="lead">Kultúrne srdce Japonska</p>
     </div>
 </section>
 
 <div class="container py-5">
 
     <div class="text-center mb-5">
-        <h2>About Kyoto</h2>
+<h2>O Kjóte</h2>
         <p class="text-muted">
-            Kyoto is famous for its temples, traditional streets, geisha culture,
-            and beautiful seasonal scenery like cherry blossoms.
+            Kjóto je slávne pre svoje chrámy, tradičné uličky, kultúru gejš
+            a krásnu sezónnu scenériu ako sakurové kvety.
         </p>
     </div>
 
@@ -49,7 +49,7 @@
         </div>
     </div>
 
-    <h3 class="text-center mb-4">Recommended Hotels</h3>
+<h3 class="text-center mb-4">Odporúčané hotely</h3>
 
     <div class="row">
 
@@ -58,7 +58,7 @@
                 <img src="assets/images/kyoto1.jpg">
                 <div class="card-body">
                     <h5>
-                        Gion Hatanaka
+                        Park Hyatt Kyoto
                     </h5>
                     <p class="text-muted">
                         Traditional ryokan experience in the historic Gion district.

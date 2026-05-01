@@ -28,7 +28,7 @@ body { font-family: 'Poppins', sans-serif; }
 }
 
 .hotel-card img {
-    height:220px;
+    height:280px;
     object-fit:cover;
     width:100%;
 }

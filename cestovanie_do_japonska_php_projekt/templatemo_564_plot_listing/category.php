@@ -77,35 +77,35 @@ https://templatemo.com/tm-564-plot-listing
 
                     <div class="first-thumb active">
                       <div class="thumb">
-                        <span class="icon"><img src="assets/images/search-icon-01.png" alt=""><h4>Destinácie</h4></span>    
+                        <span class="icon"><img src="assets/images/home.png" alt=""><h4>Destinácie</h4></span>    
                       </div>
                     </div>
 
                     <div>
 
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-02.png" alt=""><h4>Gastronómia</h4></span>
+                        <span class="icon"><img src="assets/images/sushi.png" alt=""><h4>Gastronómia</h4></span>
                       </div>
 
                     </div>
                     <div>
 
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-03.png" alt=""><h4>Doprava</h4></span>
+                        <span class="icon"><img src="assets/images/train.png" alt=""><h4>Doprava</h4></span>
                       </div>
 
                     </div>
                     <div>
 
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-04.png" alt=""><h4>Ubytovanie</h4></span>
+                        <span class="icon"><img src="assets/images/resort.png" alt=""><h4>Ubytovanie</h4></span>
                       </div>
 
                     </div>
                     <div class="last-thumb">
 
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-05.png" alt=""><h4>Kultúra</h4></span>
+                        <span class="icon"><img src="assets/images/location.png" alt=""><h4>Kultúra</h4></span>
                       </div>
 
                     </div>
@@ -122,7 +122,7 @@ https://templatemo.com/tm-564-plot-listing
                                 <div class="row">
                                   <div class="col-lg-6">
                                     <div class="top-icon">
-                                      <span class="icon"><img src="assets/images/search-icon-01.png" alt=""><h4>Destinácie</h4></span> 
+                                      <span class="icon"><img src="assets/images/home.png" alt=""><h4>Destinácie</h4></span> 
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
@@ -175,7 +175,7 @@ https://templatemo.com/tm-564-plot-listing
                                 <div class="row">
                                   <div class="col-lg-6">
                                     <div class="top-icon">
-                                      <span class="icon"><img src="assets/images/search-icon-02.png" alt=""><h4>Gastronómia</h4></span> 
+                                      <span class="icon"><img src="assets/images/sushi.png" alt=""><h4>Gastronómia</h4></span> 
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
@@ -231,7 +231,7 @@ https://templatemo.com/tm-564-plot-listing
                                 <div class="row">
                                   <div class="col-lg-6">
                                     <div class="top-icon">
-                                      <span class="icon"><img src="assets/images/search-icon-03.png" alt=""><h4>Doprava</h4></span> 
+                                      <span class="icon"><img src="assets/images/train.png" alt=""><h4>Doprava</h4></span> 
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
@@ -284,7 +284,7 @@ https://templatemo.com/tm-564-plot-listing
                                 <div class="row">
                                   <div class="col-lg-6">
                                     <div class="top-icon">
-                                      <span class="icon"><img src="assets/images/search-icon-04.png" alt=""><h4>Ubytovanie</h4></span> 
+                                      <span class="icon"><img src="assets/images/resort.png" alt=""><h4>Ubytovanie</h4></span> 
                                     </div>
                                   </div>
                                   <div class="col-lg-6">
@@ -337,7 +337,7 @@ https://templatemo.com/tm-564-plot-listing
                                 <div class="row">
                                   <div class="col-lg-6">
                                     <div class="top-icon">
-                                      <span class="icon"><img src="assets/images/search-icon-05.png" alt=""><h4>Kultúra</h4></span> 
+                                      <span class="icon"><img src="assets/images/location.png" alt=""><h4>Kultúra</h4></span> 
                                     </div>
                                   </div>
                                   <div class="col-lg-6">

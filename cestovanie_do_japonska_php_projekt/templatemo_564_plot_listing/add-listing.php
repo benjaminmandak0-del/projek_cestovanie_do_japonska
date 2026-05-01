@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Listing</title>
+<title>Pridať inzerát</title>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -18,7 +18,7 @@
 <body>
 
 <div class="container mt-5">
-    <h2>Add New Listing</h2>
+<h2>Pridať nový inzerát</h2>
 
     <form action="process.php" method="POST" enctype="multipart/form-data">
 
@@ -33,7 +33,7 @@
         <!-- Category -->
         <div class="mb-3">
             <select name="category" class="form-control" required>
-                <option value="">Select Category</option>
+<option value="">Vyberte kategóriu</option>
                 <option value="apartments">Apartments</option>
                 <option value="houses">Houses</option>
                 <option value="commercial">Commercial</option>
@@ -83,7 +83,7 @@
         </div>
 
         <!-- Contact Info -->
-        <h4>Your Info</h4>
+<h4>Vaše údaje</h4>
 
         <div class="mb-3">
             <input type="text" name="contact_name" class="form-control" placeholder="Your Name" required>
@@ -98,7 +98,7 @@
         </div>
 
         <!-- Submit -->
-        <button type="submit" class="btn btn-primary">Submit Listing</button>
+<button type="submit" class="btn btn-primary">Odoslať inzerát</button>
 
     </form>
 </div>

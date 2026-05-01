@@ -27,7 +27,7 @@
     <div class="container hero-content">
         <span class="badge badge-city mb-2">Japan 🇯🇵</span>
         <h1 class="display-4 fw-bold">Osaka</h1>
-        <p class="lead">Japan’s kitchen – food, lights, and unforgettable energy</p>
+        <p class="lead">Kuchyňa Japonska – jedlá, svetlá a nezabudnuteľná energia</p>
     </div>
 </section>
 
@@ -37,11 +37,11 @@
     <!-- Description -->
     <div class="row mb-5">
         <div class="col-lg-10 mx-auto text-center">
-            <h2 class="section-title">About Osaka</h2>
+            <h2 class="section-title">O Osake</h2>
             <p class="text-muted">
-                Osaka is one of Japan’s most vibrant cities, known for its street food,
-                neon-lit districts like Dotonbori, and friendly atmosphere.
-                It perfectly combines modern city life with deep cultural roots.
+                Osaka je jedným z najživších miest Japonska, známa svojím street foodom,
+                neonovými štvrťami ako Dotonbori a priateľskou atmosférou.
+                Dokonale kombinuje moderný mestský život s hlbokými kultúrnymi koreňmi.
             </p>
         </div>
     </div>
@@ -50,22 +50,22 @@
     <div class="row text-center mb-5">
         <div class="col-md-3">
             <div class="p-3 shadow-sm rounded">
-                <h5>🍜 Food Capital</h5>
-                <small class="text-muted">Known as Japan’s kitchen</small>
+                <h5>🍜 Gastro centrum</h5>
+                <small class="text-muted">Známa ako kuchyňa Japonska</small>
             </div>
         </div>
 
         <div class="col-md-3">
             <div class="p-3 shadow-sm rounded">
                 <h5>🌆 Dotonbori</h5>
-                <small class="text-muted">Famous neon district</small>
+                <small class="text-muted">Známa neonová štvrť</small>
             </div>
         </div>
 
         <div class="col-md-3">
             <div class="p-3 shadow-sm rounded">
-                <h5>🏯 Osaka Castle</h5>
-                <small class="text-muted">Historic landmark</small>
+                <h5>🏯 Osaka hrad</h5>
+                <small class="text-muted">historická pamiatka</small>
             </div>
         </div>
 
@@ -78,7 +78,7 @@
     </div>
 
     <!-- Hotels -->
-    <h3 class="section-title text-center mb-4">Recommended Hotels</h3>
+    <h3 class="section-title text-center mb-4">Odporúčané hotely</h3>
 
     <div class="row">
 
@@ -91,7 +91,7 @@
                         Hotel Universal Port
                     </h5>
                     <p class="text-muted">
-                        Perfect hotel next to Universal Studios Japan. Ideal for families and theme park visitors.
+                        Dokonalý hotel vedľa Universal Studios Japan. Ideálny pre rodiny a návštevníkov tématicovho parku.
                     </p>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                         Swissôtel Nankai Osaka
                     </h5>
                     <p class="text-muted">
-                        Luxury hotel in the heart of Osaka with direct access to Namba station.
+                        Luxusný hotel v srdci Osaky s priamym prístupom k stanici Namba.
                     </p>
                 </div>
             </div>

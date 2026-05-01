@@ -94,6 +94,10 @@ ul, li {
   list-style: none;
 }
 
+img {
+  height: auto;
+}
+
 header, nav, section, article, aside, footer, hgroup {
   display: block;
 }
@@ -786,6 +790,7 @@ Banner Style
 
 .main-banner ul.categories li .icon img {
   max-width: 27px;
+  height: auto;
 }
 
 form#search-form {
@@ -884,6 +889,7 @@ Popular Categories
 
 .popular-categories .icon img {
   max-width: 27px;
+  height: auto;
 }
 
 .popular-categories .naccs .menu div.first-thumb {
@@ -963,10 +969,15 @@ Popular Categories
 .popular-categories .nacc .thumb .right-image {
   padding: 60px;
   display: inline-flex;
+  height: 300px;
 } 
 
 .popular-categories .nacc .thumb img {
   border-radius: 7px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .popular-categories .nacc .thumb .left-text .main-white-button a{
@@ -995,7 +1006,7 @@ Recent Listing
 }
 
 .recent-listing .item .listing-item {
-  display: inline-flex;
+  display: flex; /* inline-flex helyett jobb */
   background-color: #f7f7f7;
   border-radius: 7px;
   width: 100%;
@@ -1003,28 +1014,52 @@ Recent Listing
   margin-bottom: 30px;
 }
 
+/* ✅ FIX KÉP MÉRET - UNIFORM 680x425px */
 .recent-listing .item .left-image {
-  float: left;
+  flex: 0 0 680px;
+  width: 680px !important;
+  min-width: 680px !important;
+  max-width: 680px !important;
+  height: 425px !important;
+  min-height: 425px !important;
+  max-height: 425px !important;
   overflow: hidden;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
+  line-height: 0;
+}
+
+.recent-listing .item .left-image a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .recent-listing .item .left-image img {
-  overflow: hidden;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  display: block;
+  object-fit: cover !important;
+  object-position: center center;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
 }
 
+/* JOBB OLDAL */
 .recent-listing .item .right-content {
-  display: inline-block;
-  padding: 60px;
+  display: block;
+  padding: 40px;
+  flex: 1;
 }
 
 .recent-listing .item .right-content ul.rate {
   position: absolute;
-  right: 60px;
-  top: 60px;
+  right: 40px;
+  top: 40px;
 }
 
 .recent-listing .item .right-content ul.rate li {
@@ -1069,7 +1104,7 @@ Recent Listing
 
 .recent-listing .item .right-content span.price .icon img {
   max-width: 16px;
-  text-align: center;
+  height: auto;
   display: inline-block;
 }
 
@@ -1098,14 +1133,15 @@ Recent Listing
 
 .recent-listing .item .right-content ul.info li img {
   max-width: 30px;
+  height: auto;
   margin-right: 15px;
   display: inline;
 }
 
 .recent-listing .item .right-content .main-white-button {
   position: absolute;
-  right: 60px;
-  bottom: 60px;
+  right: 40px;
+  bottom: 40px;
 }
 
 .recent-listing .owl-dots {
@@ -1127,6 +1163,31 @@ Recent Listing
   height: 14px;
 }
 
+/* ✅ MOBIL NÉZET */
+@media (max-width: 768px) {
+  .recent-listing .item .listing-item {
+    flex-direction: column;
+  }
+
+  .recent-listing .item .left-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 7px 7px 0 0;
+  }
+
+  .recent-listing .item .left-image img {
+    border-radius: 7px 7px 0 0;
+  }
+
+  .recent-listing .item .right-content {
+    padding: 20px;
+  }
+
+  .recent-listing .item .right-content .main-white-button {
+    position: static;
+    margin-top: 20px;
+  }
+}
 
 
 /*
@@ -1413,6 +1474,7 @@ Category Post
 
 .category-post .icon img {
   max-width: 27px;
+  height: auto;
 }
 
 .category-post .naccs .menu div.first-thumb  {
@@ -1605,6 +1667,7 @@ Listing Page
 
 .listing-page .icon img {
   max-width: 27px;
+  height: auto;
 }
 
 .listing-page .naccs .menu div.first-thumb {
@@ -1754,6 +1817,7 @@ Listing Page
 
 .listing-page .item .right-content span.price .icon img {
   max-width: 16px;
+  height: auto;
   text-align: center;
   display: inline-block;
 }
