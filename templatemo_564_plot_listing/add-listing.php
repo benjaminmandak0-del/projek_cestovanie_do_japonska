@@ -1,177 +1,117 @@
+<?php include 'templates/header.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Add Your Property Listing - Plotlist">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- Updated fonts: Poppins for modern look -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <title>Add Your Listing - Plotlist</title>
-    <!-- Existing styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pridať inzerát</title>
+
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-plot-listing.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/add-listing.css">
+
 </head>
+
 <body>
-    <!-- Preloader -->
-    <div id="js-preloader" class="js-preloader">
-        <div class="preloader-inner">
-            <span class="dot"></span>
-            <div class="dots">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
+<div class="container mt-5">
+<h2>Pridať nový inzerát</h2>
+
+    <form action="process.php" method="POST" enctype="multipart/form-data">
+
+        <!-- FONTOS: form azonosító -->
+        <input type="hidden" name="form_type" value="listing">
+
+        <!-- Title -->
+        <div class="mb-3">
+            <input type="text" name="title" class="form-control" placeholder="Listing Title" required>
         </div>
-    </div>
 
-    <!-- Header -->
-    <?php include 'templates/header.php'; ?>
-
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-label">SHARE YOUR PROPERTY</div>
-                <h1 class="hero-heading">Add Your Listing And Reach More Customers</h1>
-                <p class="hero-desc">Create your property listing with our intuitive form and connect with potential buyers instantly.</p>
-            </div>
+        <!-- Category -->
+        <div class="mb-3">
+            <select name="category" class="form-control" required>
+<option value="">Vyberte kategóriu</option>
+                <option value="apartments">Apartments</option>
+                <option value="houses">Houses</option>
+                <option value="commercial">Commercial</option>
+                <option value="land">Land</option>
+            </select>
         </div>
-    </section>
 
-    <!-- Main Form Section -->
-    <section class="listing-form-page">
-        <div class="container">
-            <div class="form-card">
-                <h3 class="section-title">Create New Listing</h3>
-                
-                <form id="add-listing" action="process.php" method="post" enctype="multipart/form-data">
-                    <div class="form-grid">
-                        
-                        <!-- Listing Title -->
-                        <div class="form-field">
-                            <input type="text" name="title" id="title" placeholder="Listing Title" autocomplete="on" required>
-                        </div>
-
-                        <!-- Category -->
-                        <div class="form-field">
-                            <select name="category" id="category" required>
-                                <option value="">Select Category</option>
-                                <option value="apartments">Apartments</option>
-                                <option value="houses">Houses</option>
-                                <option value="commercial">Commercial</option>
-                                <option value="land">Land</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-
-                        <!-- Price with $ -->
-                        <div class="form-field price-field">
-                            <input type="number" name="price" id="price" placeholder="0" step="0.01" min="0" required>
-                        </div>
-
-                        <!-- Location -->
-                        <div class="form-field">
-                            <input type="text" name="location" id="location" placeholder="Location / Address" autocomplete="on" required>
-                        </div>
-
-                        <!-- Area Size -->
-                        <div class="form-field">
-                            <input type="number" name="area" id="area" placeholder="Area Size (sq ft)" min="0">
-                        </div>
-
-                        <!-- Bedrooms -->
-                        <div class="form-field">
-                            <input type="number" name="bedrooms" id="bedrooms" placeholder="Number of Bedrooms" min="0">
-                        </div>
-
-                        <!-- Description -->
-                        <div class="form-field form-grid-full">
-                            <textarea name="description" id="description" placeholder="Property Description" required></textarea>
-                        </div>
-
-                        <!-- Amenities -->
-                        <div class="form-grid-full">
-                            <h4 class="section-title" style="font-size: 1.5rem; margin-bottom: 24px;">Amenities</h4>
-                            <div class="amenities-grid">
-                                <label class="amenity-item">
-                                    <input type="checkbox" name="parking" value="parking">
-                                    <span>Parking</span>
-                                </label>
-                                <label class="amenity-item">
-                                    <input type="checkbox" name="wifi" value="wifi">
-                                    <span>WiFi</span>
-                                </label>
-                                <label class="amenity-item">
-                                    <input type="checkbox" name="pool" value="pool">
-                                    <span>Pool</span>
-                                </label>
-                                <label class="amenity-item">
-                                    <input type="checkbox" name="gym" value="gym">
-                                    <span>Gym</span>
-                                </label>
-                                <label class="amenity-item">
-                                    <input type="checkbox" name="garden" value="garden">
-                                    <span>Garden</span>
-                                </label>
-                                <label class="amenity-item">
-                                    <input type="checkbox" name="ac" value="air_conditioning">
-                                    <span>Air Conditioning</span>
-                                </label>
-                                <label class="amenity-item">
-                                    <input type="checkbox" name="furnished" value="furnished">
-                                    <span>Furnished</span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- Image Upload (full width) -->
-                        <div class="form-field form-grid-full">
-                            <input type="file" name="image" id="image" accept="image/*" class="form-control">
-                        </div>
-
-                        <!-- User Information Section -->
-                        <div class="form-grid-full user-section">
-                            <h4 class="section-title" style="font-size: 1.75rem;">Your Information</h4>
-                            <div class="form-grid">
-                                <div class="form-field">
-                                    <input type="text" name="contact_name" id="contact_name" placeholder="Your Name" autocomplete="on" required>
-                                </div>
-                                <div class="form-field">
-                                    <input type="email" name="contact_email" id="contact_email" placeholder="Your Email" required>
-                                </div>
-                                <div class="form-field form-grid-full">
-                                    <input type="tel" name="contact_phone" id="contact_phone" placeholder="Your Phone Number" autocomplete="on">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Submit Button -->
-                        <button type="submit" class="submit-btn">
-                            <i class="fa fa-paper-plane"></i>
-                            Submit Listing
-                        </button>
-
-                    </div>
-                </form>
-            </div>
+        <!-- Price -->
+        <div class="mb-3">
+            <input type="number" name="price" class="form-control" placeholder="Price" required>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <?php include 'templates/footer.php'; ?>
+        <!-- Location -->
+        <div class="mb-3">
+            <input type="text" name="location" class="form-control" placeholder="Location" required>
+        </div>
 
-    <!-- Scripts (existing) -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/animation.js"></script>
-    <script src="assets/js/imagesloaded.js"></script>
-    <script src="assets/js/custom.js"></script>
+        <!-- Area -->
+        <div class="mb-3">
+            <input type="number" name="area" class="form-control" placeholder="Area Size">
+        </div>
+
+        <!-- Bedrooms -->
+        <div class="mb-3">
+            <input type="number" name="bedrooms" class="form-control" placeholder="Bedrooms">
+        </div>
+
+        <!-- Description -->
+        <div class="mb-3">
+            <textarea name="description" class="form-control" placeholder="Description" required></textarea>
+        </div>
+
+        <!-- Amenities -->
+        <div class="mb-3">
+            <label><input type="checkbox" name="parking"> Parking</label><br>
+            <label><input type="checkbox" name="wifi"> WiFi</label><br>
+            <label><input type="checkbox" name="pool"> Pool</label><br>
+            <label><input type="checkbox" name="gym"> Gym</label><br>
+            <label><input type="checkbox" name="garden"> Garden</label><br>
+            <label><input type="checkbox" name="ac"> AC</label><br>
+            <label><input type="checkbox" name="furnished"> Furnished</label>
+        </div>
+
+        <!-- Image -->
+        <div class="mb-3">
+            <input type="file" name="image" class="form-control">
+        </div>
+
+        <!-- Contact Info -->
+<h4>Vaše údaje</h4>
+
+        <div class="mb-3">
+            <input type="text" name="contact_name" class="form-control" placeholder="Your Name" required>
+        </div>
+
+        <div class="mb-3">
+            <input type="email" name="contact_email" class="form-control" placeholder="Your Email" required>
+        </div>
+
+        <div class="mb-3">
+            <input type="text" name="contact_phone" class="form-control" placeholder="Phone">
+        </div>
+
+        <!-- Submit -->
+<button type="submit" class="btn btn-primary">Odoslať inzerát</button>
+
+    </form>
+</div>
+
+<?php include 'templates/footer.php'; ?>
+
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+  
 </body>
 </html>

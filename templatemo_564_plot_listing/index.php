@@ -58,50 +58,16 @@ https://templatemo.com/tm-564-plot-listing
             <h2>Sakura Travel</h2>
           </div>
         </div>
-        <div class="col-lg-12">
-          <form id="search-form" name="gs" method="submit" role="search" action="#">
-            <div class="row">
-              <div class="col-lg-3 align-self-center">
-                  <fieldset>
-                      <select name="area" class="form-select" aria-label="Area" id="chooseCategory" onchange="this.form.click()">
-                          <option selected>All Areas</option>
-                          <option value="New Village">New Village</option>
-                          <option value="Old Town">Old Town</option>
-                          <option value="Modern City">Modern City</option>
-                      </select>
-                  </fieldset>
-              </div>
-              <div class="col-lg-3 align-self-center">
-                  <fieldset>
-                      <input type="address" name="address" class="searchText" placeholder="Enter a location" autocomplete="on" required>
-                  </fieldset>
-              </div>
-              <div class="col-lg-3 align-self-center">
-                  <fieldset>
-                      <select name="price" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
-                          <option selected>Price Range</option>
-                          <option value="$100 - $250">$100 - $250</option>
-                          <option value="$250 - $500">$250 - $500</option>
-                          <option value="$500 - $1000">$500 - $1,000</option>
-                          <option value="$1000+">$1,000 or more</option>
-                      </select>
-                  </fieldset>
-              </div>
-              <div class="col-lg-3">                        
-                  <fieldset>
-                      <button class="main-button"><i class="fa fa-search"></i> Search Now</button>
-                  </fieldset>
-              </div>
-            </div>
+        
           </form>
         </div>
         <div class="col-lg-10 offset-lg-1">
           <ul class="categories">
-            <li><a href="category.php"><span class="icon"><img src="assets/images/search-icon-01.png" alt="Home"></span> Apartments</a></li>
-            <li><a href="category.php"><span class="icon"><img src="assets/images/search-icon-02.png" alt="Food"></span> Food &amp; Life</a></li>
-            <li><a href="category.php"><span class="icon"><img src="assets/images/search-icon-03.png" alt="Vehicle"></span> Cars</a></li>
-            <li><a href="category.php"><span class="icon"><img src="assets/images/search-icon-04.png" alt="Shopping"></span> Shopping</a></li>
-            <li><a href="category.php"><span class="icon"><img src="assets/images/search-icon-05.png" alt="Travel"></span> Traveling</a></li>
+            <li><a href="category.php?cat=destinacia"><span class="icon"><img src="assets/images/search-icon-01.png" alt="Home"></span> Destinacia</a></li>
+            <li><a href="category.php?cat=gastronomia"><span class="icon"><img src="assets/images/search-icon-02.png" alt="Food"></span> Gastronomia</a></li>
+            <li><a href="category.php?cat=doprava"><span class="icon"><img src="assets/images/search-icon-03.png" alt="Vehicle"></span> Doprava</a></li>
+            <li><a href="category.php?cat=ubytovanie"><span class="icon"><img src="assets/images/search-icon-04.png" alt="Shopping"></span> Ubytovanie</a></li>
+            <li><a href="category.php?cat=kultura"><span class="icon"><img src="assets/images/search-icon-05.png" alt="Travel"></span> Kultura</a></li>
           </ul>
         </div>
       </div>
@@ -113,9 +79,9 @@ https://templatemo.com/tm-564-plot-listing
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="section-heading">
-            <h2>Popular Categories</h2>
-            <h6>Check Them Out</h6>
+<div class="section-heading">
+            <h2>Populárne kategórie</h2>
+            <h6>Vyskúšajte ich</h6>
           </div>
         </div>
         <div class="col-lg-12">
@@ -128,7 +94,7 @@ https://templatemo.com/tm-564-plot-listing
                     <div class="first-thumb active">
                       <a>
                       <div class="thumb">
-                        <span class="icon"><img src="assets/images/search-icon-01.png" alt=""></span>
+                        <span class="icon"><img src="assets/images/search-icon-01.png" alt="category.php?cat=destinacia"></span>
                         Destinácie
                       </div>
                       </a>
@@ -136,7 +102,7 @@ https://templatemo.com/tm-564-plot-listing
                     <div>
                       <a>
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-02.png" alt=""></span>
+                        <span class="icon"><img src="assets/images/search-icon-02.png" alt="category.php?cat=gastronomia"></span>
                         Gastronómia
                       </div>
                       </a>
@@ -144,7 +110,7 @@ https://templatemo.com/tm-564-plot-listing
                     <div>
                       <a>
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-03.png" alt=""></span>
+                        <span class="icon"><img src="assets/images/search-icon-03.png" alt="category.php?cat=doprava"></span>
                         Doprava
                       </div>
                       </a>
@@ -152,14 +118,14 @@ https://templatemo.com/tm-564-plot-listing
                     <div>
                       <a>
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-04.png" alt=""></span>
+                        <span class="icon"><img src="assets/images/search-icon-04.png" alt="category.php?cat=ubytovanie"></span>
                         Ubytovanie
                       </div>
                       </a>
                     </div>
                     <div class="last-thumb">
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-05.png" alt=""></span>
+                        <span class="icon"><img src="assets/images/search-icon-05.png" alt="category.php?cat=kultura"></span>
                         Kultúra a pamiatky
                       </div>
                     </div>
@@ -289,8 +255,8 @@ https://templatemo.com/tm-564-plot-listing
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="section-heading">
-            <h2>Explore Japan</h2>
+<div class="section-heading">
+            <h2>Preskúmajte Japonsko</h2>
           </div>
         </div>
         <div class="col-lg-12">
@@ -300,7 +266,7 @@ https://templatemo.com/tm-564-plot-listing
                 <div class="col-lg-12">
                   <div class="listing-item">
                     <div class="left-image">
-                      <a href="#"><img src="assets/images/listing-01.jpg" alt=""></a>
+                      <a href="#"><img src="assets/images/tokyo.jpg" alt=""></a>
                     </div>
                     <div class="right-content align-self-center">
 
@@ -317,7 +283,7 @@ https://templatemo.com/tm-564-plot-listing
 
                       <p>Tokyo je moderné hlavné mesto Japonska, ktoré nikdy nespí. Je známe mrakodrapmi a rušným nočným životom.</p>
                       <div class="main-white-button">
-                        <a href="tokyo.php"><i class="fa fa-eye"></i> Contact Now</a>
+<a href="tokyo.php"><i class="fa fa-eye"></i> Kontaktujte teraz</a>
                       </div>
 
                     </div>
@@ -326,7 +292,7 @@ https://templatemo.com/tm-564-plot-listing
                 <div class="col-lg-12">
                   <div class="listing-item">
                     <div class="left-image">
-                      <a href="#"><img src="assets/images/listing-02.jpg" alt=""></a>
+                      <a href="#"><img src="assets/images/Park Hotel Tokyo.jpg" alt=""></a>
                     </div>
                     <div class="right-content align-self-center">
                       <a href="#"><h4>Park Hotel Tokyo</h4></a>
@@ -354,7 +320,7 @@ https://templatemo.com/tm-564-plot-listing
                 <div class="col-lg-12">
                   <div class="listing-item">
                     <div class="left-image">
-                      <a href="#"><img src="assets/images/listing-03.jpg" alt=""></a>
+                      <a href="#"><img src="assets/images/Hotel Gracery Shinjuku.webp" alt=""></a>
                     </div>
                     <div class="right-content align-self-center">
                       <a href="#"><h4>Hotel Gracery Shinjuku</h4></a>
@@ -387,7 +353,7 @@ https://templatemo.com/tm-564-plot-listing
                 <div class="col-lg-12">
                   <div class="listing-item">
                     <div class="left-image">
-                      <a href="#"><img src="assets/images/listing-04.jpg" alt=""></a>
+                      <a href="#"><img src="assets/images/kyoto.jpg" alt=""></a>
                     </div>
                     <div class="right-content align-self-center">
 
@@ -412,10 +378,10 @@ https://templatemo.com/tm-564-plot-listing
                 <div class="col-lg-12">
                   <div class="listing-item">
                     <div class="left-image">
-                      <a href="#"><img src="assets/images/listing-05.jpg" alt=""></a>
+                      <a href="#"><img src="assets/images/Park Hyatt Kyoto.jpg" alt=""></a>
                     </div>
                     <div class="right-content align-self-center">
-                      <a href="#"><h4>Gion Hatanaka</h4></a>
+                      <a href="#"><h4>Park Hyatt Kyoto</h4></a>
                       <h6>by: Sale Agent</h6>
                       <ul class="rate">
                         <li><i class="fa fa-star-o"></i></li>
@@ -440,7 +406,7 @@ https://templatemo.com/tm-564-plot-listing
                 <div class="col-lg-12">
                   <div class="listing-item">
                     <div class="left-image">
-                      <a href="#"><img src="assets/images/listing-06.jpg" alt=""></a>
+                      <a href="#"><img src="assets/images/The Celestine Kyoto Gion.webp" alt=""></a>
                     </div>
                     <div class="right-content align-self-center">
                       <a href="#"><h4>Hotel The Celestine Kyoto Gion</h4></a>
@@ -473,7 +439,7 @@ https://templatemo.com/tm-564-plot-listing
                 <div class="col-lg-12">
                   <div class="listing-item">
                     <div class="left-image">
-                      <a href="#"><img src="assets/images/listing-05.jpg" alt=""></a>
+                      <a href="#"><img src="assets/images/osaka.jpg" alt=""></a>
                     </div>
                     <div class="right-content align-self-center">
 
@@ -498,7 +464,7 @@ https://templatemo.com/tm-564-plot-listing
                 <div class="col-lg-12">
                   <div class="listing-item">
                     <div class="left-image">
-                      <a href="#"><img src="assets/images/listing-02.jpg" alt=""></a>
+                      <a href="#"><img src="assets/images/Swissotel Nankai Osaka.webp" alt=""></a>
                     </div>
                     <div class="right-content align-self-center">
                       <a href="#"><h4>Swissôtel Nankai Osaka</h4></a>
@@ -526,7 +492,7 @@ https://templatemo.com/tm-564-plot-listing
                 <div class="col-lg-12">
                   <div class="listing-item">
                     <div class="left-image">
-                      <a href="#"><img src="assets/images/listing-06.jpg" alt=""></a>
+                      <a href="#"><img src="assets/images/Hotel Universal Port.webp" alt=""></a>
                     </div>
                     <div class="right-content align-self-center">
                       <a href="#"><h4>Hotel Universal Port</h4></a>

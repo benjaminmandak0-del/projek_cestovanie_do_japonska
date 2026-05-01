@@ -10,23 +10,23 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="helpful-links">
-            <h4>Helpful Links</h4>
+<div class="helpful-links">
+            <h4>Užitočné odkazy</h4>
             <div class="row">
               <div class="col-lg-6 col-sm-6">
                 <ul>
-                  <li><a href="category.php">Categories</a></li>
-                  <li><a href="reviews.php">Reviews</a></li>
-                  <li><a href="listing.php">Listing</a></li>
-                  <li><a href="contact.php">Contact Us</a></li>
+                  <li><a href="category.php">Kategórie</a></li>
+                  <li><a href="reviews.php">Recenzie</a></li>
+                  <li><a href="listing.php">Zoznam</a></li>
+                  <li><a href="contact.php">Kontaktujte nás</a></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Awards</a></li>
-                  <li><a href="#">Useful Sites</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">O nás</a></li>
+                  <li><a href="#">Ocenenia</a></li>
+                  <li><a href="#">Užitočné stránky</a></li>
+                  <li><a href="#">Zásady ochrany osobných údajov</a></li>
                 </ul>
               </div>
             </div>
@@ -34,7 +34,7 @@
         </div>
         <div class="col-lg-4">
           <div class="contact-us">
-            <h4>Contact Us</h4>
+            <h4>Kontaktujte nás</h4>
             <p>27th Street of New Town, Digital Villa</p>
             <div class="row">
               <div class="col-lg-6">

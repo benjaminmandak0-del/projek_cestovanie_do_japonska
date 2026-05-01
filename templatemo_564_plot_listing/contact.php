@@ -55,8 +55,8 @@ https://templatemo.com/tm-564-plot-listing
       <div class="row">
         <div class="col-lg-8">
           <div class="top-text header-text">
-            <h6>Keep in touch with us</h6>
-            <h2>Feel free to send us a message about your business needs</h2>
+<h6>Ostaňte v kontakte s nami</h6>
+            <h2>Odošlite nám správu o vašich potrebách</h2>
           </div>
         </div>
       </div>
@@ -85,39 +85,39 @@ https://templatemo.com/tm-564-plot-listing
                     <!-- Name -->
                     <div class="col-lg-6">
                       <fieldset>
-                        <input type="text" name="name" id="name" placeholder="Name" autocomplete="on" required>
+<input type="text" name="name" id="name" placeholder="Meno" autocomplete="on" required>
                       </fieldset>
                     </div>
 
                     <!-- Surname -->
                     <div class="col-lg-6">
                       <fieldset>
-                        <input type="text" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+<input type="text" name="surname" id="surname" placeholder="Priezvisko" autocomplete="on" required>
                       </fieldset>
                     </div>
 
                     <!-- Email -->
                     <div class="col-lg-12">
                       <fieldset>
-                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+<input type="email" name="email" id="email" placeholder="Váš email" required>
                       </fieldset>
                     </div>
 
                     <!-- Options -->
                     <div class="col-lg-12">
-                      <ul>
-                        <li><input type="checkbox" name="option1" value="cars"><span>Cars</span></li>
-                        <li><input type="checkbox" name="option2" value="apartments"><span>Apartments</span></li>
-                        <li><input type="checkbox" name="option3" value="shopping"><span>Shopping</span></li>
-                        <li><input type="checkbox" name="option4" value="food"><span>Food &amp; Life</span></li>
-                        <li><input type="checkbox" name="option5" value="traveling"><span>Traveling</span></li>
+<ul>
+                        <li><input type="checkbox" name="option1" value="cars"><span>Autá</span></li>
+                        <li><input type="checkbox" name="option2" value="apartments"><span>Byty</span></li>
+                        <li><input type="checkbox" name="option3" value="shopping"><span>Nákupy</span></li>
+                        <li><input type="checkbox" name="option4" value="food"><span>Jedlo a životný štýl</span></li>
+                        <li><input type="checkbox" name="option5" value="traveling"><span>Cestovanie</span></li>
                       </ul>
                     </div>
 
                     <!-- Message -->
                     <div class="col-lg-12">
                       <fieldset>
-                        <textarea name="message" class="form-control" id="message" placeholder="Message" required></textarea>  
+<textarea name="message" class="form-control" id="message" placeholder="Správa" required></textarea>
                       </fieldset>
                     </div>
 
@@ -125,7 +125,7 @@ https://templatemo.com/tm-564-plot-listing
                     <div class="col-lg-12">
                       <fieldset>
                         <button type="submit" id="form-submit" class="main-button">
-                          <i class="fa fa-paper-plane"></i> Send Message
+<i class="fa fa-paper-plane"></i> Odoslať správu
                         </button>
                       </fieldset>
                     </div>
