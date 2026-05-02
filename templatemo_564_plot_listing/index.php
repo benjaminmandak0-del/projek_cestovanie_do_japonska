@@ -63,11 +63,11 @@ https://templatemo.com/tm-564-plot-listing
         </div>
         <div class="col-lg-10 offset-lg-1">
           <ul class="categories">
-            <li><a href="category.php?cat=destinacia"><span class="icon"><img src="assets/images/search-icon-01.png" alt="Home"></span> Destinacia</a></li>
-            <li><a href="category.php?cat=gastronomia"><span class="icon"><img src="assets/images/search-icon-02.png" alt="Food"></span> Gastronomia</a></li>
-            <li><a href="category.php?cat=doprava"><span class="icon"><img src="assets/images/search-icon-03.png" alt="Vehicle"></span> Doprava</a></li>
-            <li><a href="category.php?cat=ubytovanie"><span class="icon"><img src="assets/images/search-icon-04.png" alt="Shopping"></span> Ubytovanie</a></li>
-            <li><a href="category.php?cat=kultura"><span class="icon"><img src="assets/images/search-icon-05.png" alt="Travel"></span> Kultura</a></li>
+            <li><a href="category.php?cat=destinacia"><span class="icon"><img src="assets/images/home.png" alt="Home"></span> Destinacia</a></li>
+            <li><a href="category.php?cat=gastronomia"><span class="icon"><img src="assets/images/sushi.png" alt="Food"></span> Gastronomia</a></li>
+            <li><a href="category.php?cat=doprava"><span class="icon"><img src="assets/images/train.png" alt="Vehicle"></span> Doprava</a></li>
+            <li><a href="category.php?cat=ubytovanie"><span class="icon"><img src="assets/images/resort.png" alt="Shopping"></span> Ubytovanie</a></li>
+            <li><a href="category.php?cat=kultura"><span class="icon"><img src="assets/images/location.png" alt="Travel"></span> Kultura</a></li>
           </ul>
         </div>
       </div>
@@ -94,7 +94,7 @@ https://templatemo.com/tm-564-plot-listing
                     <div class="first-thumb active">
                       <a>
                       <div class="thumb">
-                        <span class="icon"><img src="assets/images/search-icon-01.png" alt="category.php?cat=destinacia"></span>
+                        <span class="icon"><img src="assets/images/home.png" alt="category.php?cat=destinacia"></span>
                         Destinácie
                       </div>
                       </a>
@@ -102,7 +102,7 @@ https://templatemo.com/tm-564-plot-listing
                     <div>
                       <a>
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-02.png" alt="category.php?cat=gastronomia"></span>
+                        <span class="icon"><img src="assets/images/sushi.png" alt="category.php?cat=gastronomia"></span>
                         Gastronómia
                       </div>
                       </a>
@@ -110,7 +110,7 @@ https://templatemo.com/tm-564-plot-listing
                     <div>
                       <a>
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-03.png" alt="category.php?cat=doprava"></span>
+                        <span class="icon"><img src="assets/images/train.png" alt="category.php?cat=doprava"></span>
                         Doprava
                       </div>
                       </a>
@@ -118,14 +118,14 @@ https://templatemo.com/tm-564-plot-listing
                     <div>
                       <a>
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-04.png" alt="category.php?cat=ubytovanie"></span>
+                        <span class="icon"><img src="assets/images/resort.png" alt="category.php?cat=ubytovanie"></span>
                         Ubytovanie
                       </div>
                       </a>
                     </div>
                     <div class="last-thumb">
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-05.png" alt="category.php?cat=kultura"></span>
+                        <span class="icon"><img src="assets/images/location.png" alt="category.php?cat=kultura"></span>
                         Kultúra a pamiatky
                       </div>
                     </div>
@@ -147,7 +147,7 @@ https://templatemo.com/tm-564-plot-listing
                             </div>
                             <div class="col-lg-7 align-self-center">
                               <div class="right-image">
-                                <img src="assets/images/tabs-image-01.jpg" alt="">
+                                <img src="assets/images/japan.jpg" alt="">
                               </div>
                             </div>
                           </div>
@@ -168,7 +168,7 @@ https://templatemo.com/tm-564-plot-listing
                             </div>
                             <div class="col-lg-7 align-self-center">
                               <div class="right-image">
-                                <img src="assets/images/tabs-image-02.jpg" alt="Foods on the table">
+                                <img src="assets/images/jap_gastroomia.jpg" alt="Foods on the table">
                               </div>
                             </div>
                           </div>
@@ -189,7 +189,7 @@ https://templatemo.com/tm-564-plot-listing
                             </div>
                             <div class="col-lg-7 align-self-center">
                               <div class="right-image">
-                                <img src="assets/images/tabs-image-03.jpg" alt="cars in the city">
+                                <img src="assets/images/jap_shinkansen.webp" alt="cars in the city">
                               </div>
                             </div>
                           </div>
@@ -210,7 +210,7 @@ https://templatemo.com/tm-564-plot-listing
                             </div>
                             <div class="col-lg-7 align-self-center">
                               <div class="right-image">
-                                <img src="assets/images/tabs-image-04.jpg" alt="Shopping Girl">
+                                <img src="assets/images/jap_city.webp" alt="Shopping Girl">
                               </div>
                             </div>
                           </div>
@@ -233,7 +233,7 @@ https://templatemo.com/tm-564-plot-listing
                             </div>
                             <div class="col-lg-7 align-self-center">
                               <div class="right-image">
-                                <img src="assets/images/tabs-image-05.jpg" alt="Traveling Beach">
+                                <img src="assets/images/jap_kultura.jpg" alt="Traveling Beach">
                               </div>
                             </div>
                           </div>
@@ -296,7 +296,7 @@ https://templatemo.com/tm-564-plot-listing
                     </div>
                     <div class="right-content align-self-center">
                       <a href="#"><h4>Park Hotel Tokyo</h4></a>
-                      <h6>by: Top Sale Agent</h6>
+                      <h6>by: Park Hotel Tokyo</h6>
                       <ul class="rate">
                         <li><i class="fa fa-star-o"></i></li>
                         <li><i class="fa fa-star-o"></i></li>
@@ -305,11 +305,11 @@ https://templatemo.com/tm-564-plot-listing
                         <li><i class="fa fa-star-o"></i></li>
                         <li>(24) Reviews</li>
                       </ul>
-                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $1,400 - $3,500 / month with taxes</span>
-                      <span class="details">Details: <em>3650 sq ft</em></span>
+                      <span class="price"><div class="icon"><img src="assets/images/eurosign.png" alt=""></div>320€/noc</span>
+                      <span class="details">Amenities: <em>Spa, Gym, Restaurant</em></span>
                       <ul class="info">
-                        <li><img src="assets/images/listing-icon-02.png" alt=""> 4 Bedrooms</li>
-                        <li><img src="assets/images/listing-icon-03.png" alt=""> 3 Bathrooms</li>
+                        <li><img src="assets/images/bedroom.png" alt=""> Deluxe Rooms</li>
+                        <li><img src="assets/images/spa.png" alt=""> Free WiFi & Parking</li>
                       </ul>
                       <div class="main-white-button">
                         <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>
@@ -324,7 +324,7 @@ https://templatemo.com/tm-564-plot-listing
                     </div>
                     <div class="right-content align-self-center">
                       <a href="#"><h4>Hotel Gracery Shinjuku</h4></a>
-                      <h6>by: Best Property</h6>
+                      <h6>by: Hotel Gracery</h6>
                       <ul class="rate">
                         <li><i class="fa fa-star-o"></i></li>
                         <li><i class="fa fa-star-o"></i></li>
@@ -333,11 +333,11 @@ https://templatemo.com/tm-564-plot-listing
                         <li><i class="fa fa-star-o"></i></li>
                         <li>(36) Reviews</li>
                       </ul>
-                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $1,500 - $3,600 / month with taxes</span>
-                      <span class="details">Details: <em>5500 sq ft</em></span>
+                      <span class="price"><div class="icon"><img src="assets/images/eurosign.png" alt=""></div>210€/noc</span>
+                      <span class="details">Amenities: <em>Bar, Rooftop View, Conference Room</em></span>
                       <ul class="info">
-                        <li><img src="assets/images/listing-icon-02.png" alt=""> 4 Bedrooms</li>
-                        <li><img src="assets/images/listing-icon-03.png" alt=""> 3 Bathrooms</li>
+                        <li><img src="assets/images/bedroom.png" alt=""> Superior Rooms</li>
+                        <li><img src="assets/images/spa.png" alt=""> Business Center</li>
                       </ul>
                       <div class="main-white-button">
                         <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>
@@ -382,7 +382,7 @@ https://templatemo.com/tm-564-plot-listing
                     </div>
                     <div class="right-content align-self-center">
                       <a href="#"><h4>Park Hyatt Kyoto</h4></a>
-                      <h6>by: Sale Agent</h6>
+                      <h6>by: Park Hyatt</h6>
                       <ul class="rate">
                         <li><i class="fa fa-star-o"></i></li>
                         <li><i class="fa fa-star-o"></i></li>
@@ -391,11 +391,11 @@ https://templatemo.com/tm-564-plot-listing
                         <li><i class="fa fa-star-o"></i></li>
                         <li>(32) Reviews</li>
                       </ul>
-                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $5,600 / month with taxes</span>
-                      <span class="details">Details: <em>1750 sq ft</em></span>
+                      <span class="price"><div class="icon"><img src="assets/images/eurosign.png" alt=""></div>450€/noc</span>
+                      <span class="details">Amenities: <em>Spa, Traditional Tea House, Garden</em></span>
                       <ul class="info">
-                        <li><img src="assets/images/listing-icon-02.png" alt=""> 6 Bedrooms</li>
-                        <li><img src="assets/images/listing-icon-03.png" alt=""> 3 Bathrooms</li>
+                        <li><img src="assets/images/bedroom.png" alt=""> Luxury Suites</li>
+                        <li><img src="assets/images/spa.png" alt=""> Concierge Service</li>
                       </ul>
                       <div class="main-white-button">
                         <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>
@@ -410,7 +410,7 @@ https://templatemo.com/tm-564-plot-listing
                     </div>
                     <div class="right-content align-self-center">
                       <a href="#"><h4>Hotel The Celestine Kyoto Gion</h4></a>
-                      <h6>by: Sale Agent</h6>
+                      <h6>by: The Celestine Hotel</h6>
                       <ul class="rate">
                         <li><i class="fa fa-star-o"></i></li>
                         <li><i class="fa fa-star-o"></i></li>
@@ -419,11 +419,11 @@ https://templatemo.com/tm-564-plot-listing
                         <li><i class="fa fa-star-o"></i></li>
                         <li>(40) Reviews</li>
                       </ul>
-                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $3,850 / month with taxes</span>
-                      <span class="details">Details: <em>3660 sq ft</em></span>
+                      <span class="price"><div class="icon"><img src="assets/images/eurosign.png" alt=""></div>380€/noc</span>
+                      <span class="details">Amenities: <em>Kaiseki Dining, Onsen Bath, Kimono Rental</em></span>
                       <ul class="info">
-                        <li><img src="assets/images/listing-icon-02.png" alt=""> 4 Bedrooms</li>
-                        <li><img src="assets/images/listing-icon-03.png" alt=""> 3 Bathrooms</li>
+                        <li><img src="assets/images/bedroom.png" alt=""> Traditional Rooms</li>
+                        <li><img src="assets/images/spa.png" alt=""> 24hr Concierge</li>
                       </ul>
                       <div class="main-white-button">
                         <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>
@@ -468,7 +468,7 @@ https://templatemo.com/tm-564-plot-listing
                     </div>
                     <div class="right-content align-self-center">
                       <a href="#"><h4>Swissôtel Nankai Osaka</h4></a>
-                      <h6>by: Sale Agent</h6>
+                      <h6>by: Swissôtel</h6>
                       <ul class="rate">
                         <li><i class="fa fa-star-o"></i></li>
                         <li><i class="fa fa-star-o"></i></li>
@@ -477,11 +477,11 @@ https://templatemo.com/tm-564-plot-listing
                         <li><i class="fa fa-star-o"></i></li>
                         <li>(15) Reviews</li>
                       </ul>
-                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $5,520 / month with taxes</span>
-                      <span class="details">Details: <em>1660 sq ft</em></span>
+                      <span class="price"><div class="icon"><img src="assets/images/eurosign.png" alt=""></div>260€/noc</span>
+                      <span class="details">Amenities: <em>Pool, Fitness, Multiple Restaurants</em></span>
                       <ul class="info">
-                        <li><img src="assets/images/listing-icon-02.png" alt=""> 5 Bedrooms</li>
-                        <li><img src="assets/images/listing-icon-03.png" alt=""> 4 Bathrooms</li>
+                        <li><img src="assets/images/bedroom.png" alt=""> Executive Rooms</li>
+                        <li><img src="assets/images/spa.png" alt=""> Room Service & Laundry</li>
                       </ul>
                       <div class="main-white-button">
                         <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>
@@ -496,7 +496,7 @@ https://templatemo.com/tm-564-plot-listing
                     </div>
                     <div class="right-content align-self-center">
                       <a href="#"><h4>Hotel Universal Port</h4></a>
-                      <h6>by: Sale Agent</h6>
+                      <h6>by: Universal Studios Hotel</h6>
                       <ul class="rate">
                         <li><i class="fa fa-star-o"></i></li>
                         <li><i class="fa fa-star-o"></i></li>
@@ -505,11 +505,11 @@ https://templatemo.com/tm-564-plot-listing
                         <li><i class="fa fa-star-o"></i></li>
                         <li>(20) Reviews</li>
                       </ul>
-                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $4,760 / month with taxes</span>
-                      <span class="details">Details: <em>2880 sq ft</em></span>
+                      <span class="price"><div class="icon"><img src="assets/images/eurosign.png" alt=""></div>180€/noc</span>
+                      <span class="details">Amenities: <em>Theme Park Access, Pool, Kids Club</em></span>
                       <ul class="info">
-                        <li><img src="assets/images/listing-icon-02.png" alt=""> 6 Bedrooms</li>
-                        <li><img src="assets/images/listing-icon-03.png" alt=""> 4 Bathrooms</li>
+                        <li><img src="assets/images/bedroom.png" alt=""> Family Rooms</li>
+                        <li><img src="assets/images/spa.png" alt=""> Theme Park Packages</li>
                       </ul>
                       <div class="main-white-button">
                         <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>

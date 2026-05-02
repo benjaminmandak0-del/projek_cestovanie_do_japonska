@@ -73,7 +73,7 @@ https://templatemo.com/tm-564-plot-listing
               <!-- Google Map -->
               <div class="col-lg-6">
                 <div id="map">
-                  <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="650px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666.2168557417432!2d17.967382245335077!3d48.09350043909143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b0d937885442d%3A0x847829ad24cf8cf!2sIgor%20Mand%C3%A1k!5e0!3m2!1ssk!2ssk!4v1777714727332!5m2!1ssk!2ssk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
 
@@ -104,16 +104,6 @@ https://templatemo.com/tm-564-plot-listing
                     </div>
 
                     <!-- Options -->
-                    <div class="col-lg-12">
-<ul>
-                        <li><input type="checkbox" name="option1" value="cars"><span>Autá</span></li>
-                        <li><input type="checkbox" name="option2" value="apartments"><span>Byty</span></li>
-                        <li><input type="checkbox" name="option3" value="shopping"><span>Nákupy</span></li>
-                        <li><input type="checkbox" name="option4" value="food"><span>Jedlo a životný štýl</span></li>
-                        <li><input type="checkbox" name="option5" value="traveling"><span>Cestovanie</span></li>
-                      </ul>
-                    </div>
-
                     <!-- Message -->
                     <div class="col-lg-12">
                       <fieldset>

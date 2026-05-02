@@ -4,7 +4,9 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
+           
             <a href="index.php" class="logo">
+              <img src="assets/images/sakurtravel_logo.png" alt="Plot Listing">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
