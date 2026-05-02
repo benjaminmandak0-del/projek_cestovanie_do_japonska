@@ -6,48 +6,114 @@ if ($conn->connect_error) {
 }
 
 /* =========================
-   ADD LISTING FORM
+   HOTEL FORM
 ========================= */
-if (isset($_POST['title'])) {
+if (isset($_POST['form_type']) && $_POST['form_type'] === "hotel") {
 
+    // alap adatok
     $title = $_POST['title'];
     $category = $_POST['category'];
-    $price = $_POST['price'];
+    $stars = $_POST['stars'] ?: null;
     $location = $_POST['location'];
-    $area = $_POST['area'];
-    $bedrooms = $_POST['bedrooms'];
+    $city = $_POST['city'];
+    $price = $_POST['price'];
+
+    $rooms = $_POST['rooms'] ?: null;
+    $checkin = $_POST['checkin'] ?: null;
+    $checkout = $_POST['checkout'] ?: null;
+    $room_types = $_POST['room_types'];
     $description = $_POST['description'];
 
-    // checkboxok (ha nincs bepipálva → 0)
-    $parking = isset($_POST['parking']) ? 1 : 0;
-    $wifi = isset($_POST['wifi']) ? 1 : 0;
-    $pool = isset($_POST['pool']) ? 1 : 0;
-    $gym = isset($_POST['gym']) ? 1 : 0;
-    $garden = isset($_POST['garden']) ? 1 : 0;
-    $ac = isset($_POST['ac']) ? 1 : 0;
-    $furnished = isset($_POST['furnished']) ? 1 : 0;
-
+    // CONTACT
     $contact_name = $_POST['contact_name'];
     $contact_email = $_POST['contact_email'];
     $contact_phone = $_POST['contact_phone'];
+    $website = $_POST['website'];
 
-    // kép feltöltés
-    $image_name = "";
-    if (!empty($_FILES['image']['name'])) {
-        $image_name = time() . "_" . $_FILES['image']['name'];
-        move_uploaded_file($_FILES['image']['tmp_name'], "uploads/" . $image_name);
+    /* ===== HOTEL INSERT ===== */
+    $stmt = $conn->prepare("
+        INSERT INTO hotels 
+        (title, category, stars, location, city, price, rooms, checkin, checkout, room_types, description)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ");
+
+    $stmt->bind_param(
+        "ssissdissss",
+        $title,
+        $category,
+        $stars,
+        $location,
+        $city,
+        $price,
+        $rooms,
+        $checkin,
+        $checkout,
+        $room_types,
+        $description
+    );
+
+    $stmt->execute();
+
+    // hotel ID
+    $hotel_id = $conn->insert_id;
+
+    /* ===== AMENITIES ===== */
+    if (!empty($_POST['amenities'])) {
+        foreach ($_POST['amenities'] as $amenity_name) {
+
+            // lekérjük az ID-t
+            $stmt = $conn->prepare("SELECT id FROM amenities WHERE name = ?");
+            $stmt->bind_param("s", $amenity_name);
+            $stmt->execute();
+            $result = $stmt->get_result();
+
+            if ($row = $result->fetch_assoc()) {
+                $amenity_id = $row['id'];
+
+                // kapcsolat mentése
+                $stmt2 = $conn->prepare("
+                    INSERT INTO hotel_amenities (hotel_id, amenity_id)
+                    VALUES (?, ?)
+                ");
+                $stmt2->bind_param("ii", $hotel_id, $amenity_id);
+                $stmt2->execute();
+            }
+        }
     }
 
-    $stmt = $conn->prepare("INSERT INTO listings 
-    (title, category, price, location, area, bedrooms, description,
-     parking, wifi, pool, gym, garden, ac, furnished,
-     image, contact_name, contact_email, contact_phone)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    /* ===== IMAGES ===== */
+    if (!empty($_FILES['images']['name'][0])) {
 
-    $stmt->bind_param("ssdsiiissiiiiissss",
-        $title, $category, $price, $location, $area, $bedrooms, $description,
-        $parking, $wifi, $pool, $gym, $garden, $ac, $furnished,
-        $image_name, $contact_name, $contact_email, $contact_phone
+        foreach ($_FILES['images']['name'] as $key => $name) {
+
+            $tmp_name = $_FILES['images']['tmp_name'][$key];
+            $new_name = time() . "_" . $name;
+
+            move_uploaded_file($tmp_name, "uploads/" . $new_name);
+
+            $stmt = $conn->prepare("
+                INSERT INTO hotel_images (hotel_id, image_path)
+                VALUES (?, ?)
+            ");
+            $stmt->bind_param("is", $hotel_id, $new_name);
+            $stmt->execute();
+        }
+    }
+
+    /* ===== CONTACT ===== */
+    $stmt = $conn->prepare("
+        INSERT INTO contacts 
+        (hotel_id, contact_name, contact_email, contact_phone, website)
+        VALUES (?, ?, ?, ?, ?)
+    ");
+
+    $stmt->bind_param(
+        "issss",
+        $hotel_id,
+        $contact_name,
+        $contact_email,
+        $contact_phone,
+        $website
     );
 
     $stmt->execute();
@@ -58,7 +124,7 @@ if (isset($_POST['title'])) {
 
 
 /* =========================
-   CONTACT FORM
+   CONTACT FORM (maradhat)
 ========================= */
 if (isset($_POST['surname'])) {
 
@@ -67,8 +133,10 @@ if (isset($_POST['surname'])) {
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $stmt = $conn->prepare("INSERT INTO contact_messages (name, surname, email, message)
-                            VALUES (?, ?, ?, ?)");
+    $stmt = $conn->prepare("
+        INSERT INTO contact_messages (name, surname, email, message)
+        VALUES (?, ?, ?, ?)
+    ");
 
     $stmt->bind_param("ssss", $name, $surname, $email, $message);
     $stmt->execute();
