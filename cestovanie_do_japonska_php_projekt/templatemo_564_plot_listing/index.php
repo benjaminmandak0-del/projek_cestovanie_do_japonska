@@ -305,11 +305,11 @@ https://templatemo.com/tm-564-plot-listing
                         <li><i class="fa fa-star-o"></i></li>
                         <li>(24) Reviews</li>
                       </ul>
-                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $180 - $320 / night</span>
+                      <span class="price"><div class="icon"><img src="assets/images/eurosign.png" alt=""></div>320€/noc</span>
                       <span class="details">Amenities: <em>Spa, Gym, Restaurant</em></span>
                       <ul class="info">
-                        <li><img src="assets/images/listing-icon-02.png" alt=""> Deluxe Rooms</li>
-                        <li><img src="assets/images/listing-icon-03.png" alt=""> Free WiFi & Parking</li>
+                        <li><img src="assets/images/bedroom.png" alt=""> Deluxe Rooms</li>
+                        <li><img src="assets/images/spa.png" alt=""> Free WiFi & Parking</li>
                       </ul>
                       <div class="main-white-button">
                         <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>
@@ -333,11 +333,11 @@ https://templatemo.com/tm-564-plot-listing
                         <li><i class="fa fa-star-o"></i></li>
                         <li>(36) Reviews</li>
                       </ul>
-                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $200 - $380 / night</span>
+                      <span class="price"><div class="icon"><img src="assets/images/eurosign.png" alt=""></div>210€/noc</span>
                       <span class="details">Amenities: <em>Bar, Rooftop View, Conference Room</em></span>
                       <ul class="info">
-                        <li><img src="assets/images/listing-icon-02.png" alt=""> Superior Rooms</li>
-                        <li><img src="assets/images/listing-icon-03.png" alt=""> Business Center</li>
+                        <li><img src="assets/images/bedroom.png" alt=""> Superior Rooms</li>
+                        <li><img src="assets/images/spa.png" alt=""> Business Center</li>
                       </ul>
                       <div class="main-white-button">
                         <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>
@@ -391,11 +391,11 @@ https://templatemo.com/tm-564-plot-listing
                         <li><i class="fa fa-star-o"></i></li>
                         <li>(32) Reviews</li>
                       </ul>
-                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $450 - $650 / night</span>
+                      <span class="price"><div class="icon"><img src="assets/images/eurosign.png" alt=""></div>450€/noc</span>
                       <span class="details">Amenities: <em>Spa, Traditional Tea House, Garden</em></span>
                       <ul class="info">
-                        <li><img src="assets/images/listing-icon-02.png" alt=""> Luxury Suites</li>
-                        <li><img src="assets/images/listing-icon-03.png" alt=""> Concierge Service</li>
+                        <li><img src="assets/images/bedroom.png" alt=""> Luxury Suites</li>
+                        <li><img src="assets/images/spa.png" alt=""> Concierge Service</li>
                       </ul>
                       <div class="main-white-button">
                         <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>
@@ -419,11 +419,11 @@ https://templatemo.com/tm-564-plot-listing
                         <li><i class="fa fa-star-o"></i></li>
                         <li>(40) Reviews</li>
                       </ul>
-                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $350 - $520 / night</span>
+                      <span class="price"><div class="icon"><img src="assets/images/eurosign.png" alt=""></div>380€/noc</span>
                       <span class="details">Amenities: <em>Kaiseki Dining, Onsen Bath, Kimono Rental</em></span>
                       <ul class="info">
-                        <li><img src="assets/images/listing-icon-02.png" alt=""> Traditional Rooms</li>
-                        <li><img src="assets/images/listing-icon-03.png" alt=""> 24hr Concierge</li>
+                        <li><img src="assets/images/bedroom.png" alt=""> Traditional Rooms</li>
+                        <li><img src="assets/images/spa.png" alt=""> 24hr Concierge</li>
                       </ul>
                       <div class="main-white-button">
                         <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>
@@ -477,11 +477,11 @@ https://templatemo.com/tm-564-plot-listing
                         <li><i class="fa fa-star-o"></i></li>
                         <li>(15) Reviews</li>
                       </ul>
-                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $220 - $420 / night</span>
+                      <span class="price"><div class="icon"><img src="assets/images/eurosign.png" alt=""></div>260€/noc</span>
                       <span class="details">Amenities: <em>Pool, Fitness, Multiple Restaurants</em></span>
                       <ul class="info">
-                        <li><img src="assets/images/listing-icon-02.png" alt=""> Executive Rooms</li>
-                        <li><img src="assets/images/listing-icon-03.png" alt=""> Room Service & Laundry</li>
+                        <li><img src="assets/images/bedroom.png" alt=""> Executive Rooms</li>
+                        <li><img src="assets/images/spa.png" alt=""> Room Service & Laundry</li>
                       </ul>
                       <div class="main-white-button">
                         <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>
@@ -505,11 +505,11 @@ https://templatemo.com/tm-564-plot-listing
                         <li><i class="fa fa-star-o"></i></li>
                         <li>(20) Reviews</li>
                       </ul>
-                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $140 - $280 / night</span>
+                      <span class="price"><div class="icon"><img src="assets/images/eurosign.png" alt=""></div>180€/noc</span>
                       <span class="details">Amenities: <em>Theme Park Access, Pool, Kids Club</em></span>
                       <ul class="info">
-                        <li><img src="assets/images/listing-icon-02.png" alt=""> Family Rooms</li>
-                        <li><img src="assets/images/listing-icon-03.png" alt=""> Theme Park Packages</li>
+                        <li><img src="assets/images/bedroom.png" alt=""> Family Rooms</li>
+                        <li><img src="assets/images/spa.png" alt=""> Theme Park Packages</li>
                       </ul>
                       <div class="main-white-button">
                         <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>

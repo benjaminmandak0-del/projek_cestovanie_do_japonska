@@ -279,19 +279,29 @@ header
 }
 
 .header-area .main-nav a.logo {
-  background-image: url(../images/white-logo.png);
+  background-image: src="assets/images/sakuratravel_logo.png";
   width: 166px;
   height: 58px;
   display: inline-block;
   margin-top: 20px;
 }
 
+.header-area .main-nav a.logo img {
+  height: 50px;
+  width: auto;
+}
+
 .background-header .main-nav a.logo {
-  background-image: url(../images/black-logo.png);
+  background-image: src="assets/images/black-logo.png"0;
   width: 164px;
   height: 58px;
   display: inline-block;
   margin-top: 10px;
+}
+
+.background-header .main-nav a.logo img {
+  height: 50px;
+  width: auto;
 }
 
 .background-header .main-nav .nav {
@@ -1132,10 +1142,11 @@ Recent Listing
 }
 
 .recent-listing .item .right-content ul.info li img {
-  max-width: 30px;
-  height: auto;
+  width: 30px;
+  height: 30px;
   margin-right: 15px;
-  display: inline;
+  display: inline-block;
+  object-fit: contain;
 }
 
 .recent-listing .item .right-content .main-white-button {
@@ -1839,10 +1850,13 @@ Listing Page
 }
 
 .listing-page .item .right-content span.info img {
-  max-width: 30px;
+  width: 30px;
+  height: 30px;
   margin-right: 15px;
-  display: inline;
+  display: inline-block;
+  object-fit: contain;
 }
+
 
 .listing-page .owl-dots {
   margin-top: 15px;
