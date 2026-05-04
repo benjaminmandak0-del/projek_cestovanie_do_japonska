@@ -20,7 +20,7 @@
 
 <?php include 'templates/header.php'; ?>
 
-<section class="hero hero-kyoto">
+<section class="hero hero-kyoto" style="background-image: url('assets/images/kyoto.jpg');">
     <div class="container hero-content">
         <h1 class="display-4 fw-bold">Kyoto</h1>
 <p class="lead">Kultúrne srdce Japonska</p>
@@ -55,7 +55,7 @@
 
         <div class="col-md-6">
             <div class="card hotel-card shadow-sm mb-4">
-                <img src="assets/images/kyoto1.jpg">
+                <img src="assets/images/Park Hyatt Kyoto.jpg">
                 <div class="card-body">
                     <h5>
                         Park Hyatt Kyoto
@@ -69,7 +69,7 @@
 
         <div class="col-md-6">
             <div class="card hotel-card shadow-sm mb-4">
-                <img src="assets/images/kyoto2.jpg">
+                <img src="assets/images/The Celestine Kyoto Gion.webp">
                 <div class="card-body">
                     <h5>
                         The Celestine Kyoto Gion
@@ -89,6 +89,10 @@
 
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/imagesloaded.js"></script>
+<script src="assets/js/custom.js"></script>
 
 </body>
 </html>

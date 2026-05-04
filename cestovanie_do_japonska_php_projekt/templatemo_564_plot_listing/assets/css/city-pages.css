@@ -33,12 +33,12 @@
 
 /* Kyoto background */
 .hero-kyoto {
-    background-image: url('../images/kyoto-hero.jpg');
+    background-image: url('../images/kyoto.jpg');
 }
 
 /* Osaka background */
 .hero-osaka {
-    background-image: url('../images/osaka-hero.jpg');
+    background-image: url('../images/osaka.jpg');
 }
 
 /* Osaka extras */
@@ -54,6 +54,6 @@
 
 /* Tokyo background */
 .hero-tokyo {
-    background-image: url('../images/tokyo-hero.jpg');
+    background-image: url('../images/tokyo.jpg');
 }
 

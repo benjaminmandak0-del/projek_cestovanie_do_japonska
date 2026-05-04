@@ -23,7 +23,7 @@
 <?php include 'templates/header.php'; ?>
 
 <!-- HERO -->
-<section class="hero hero-osaka">
+<section class="hero hero-osaka" style="background-image: url('assets/images/osaka3.jpg');">
     <div class="container hero-content">
         <span class="badge badge-city mb-2">Japan 🇯🇵</span>
         <h1 class="display-4 fw-bold">Osaka</h1>
@@ -85,7 +85,7 @@
         <!-- Hotel 1 -->
         <div class="col-md-6">
             <div class="card hotel-card shadow-sm mb-4">
-                <img src="assets/images/hotel1.jpg" class="card-img-top" alt="Hotel Universal Port">
+                <img src="assets/images/Hotel Universal Port.webp" class="card-img-top" alt="Hotel Universal Port">
                 <div class="card-body">
                     <h5>
                         Hotel Universal Port
@@ -100,7 +100,7 @@
         <!-- Hotel 2 -->
         <div class="col-md-6">
             <div class="card hotel-card shadow-sm mb-4">
-                <img src="assets/images/hotel2.jpg" class="card-img-top" alt="Swissotel Nankai Osaka">
+                <img src="assets/images/Swissotel Nankai Osaka.webp" class="card-img-top" alt="Swissotel Nankai Osaka">
                 <div class="card-body">
                     <h5>
                         Swissôtel Nankai Osaka
@@ -118,8 +118,13 @@
 
 <?php include 'templates/footer.php'; ?>
 
+<!-- Scripts -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/imagesloaded.js"></script>
+<script src="assets/js/custom.js"></script>
 
 </body>
 </html>

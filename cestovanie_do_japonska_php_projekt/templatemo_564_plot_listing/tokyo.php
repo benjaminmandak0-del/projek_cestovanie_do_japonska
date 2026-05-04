@@ -20,8 +20,8 @@
 
 <?php include 'templates/header.php'; ?>
 
-<section class="hero hero-tokyo">
-    <div class="container hero-content">
+<section class="hero hero-tokyo" style="background-image: url('assets/images/tokyo2.jpg');">
+    <div class="container hero-content" >
         <h1 class="display-4 fw-bold">Tokyo</h1>
         <p class="lead">Futuristické mesto, kde sa tradícia stretáva s inováciou</p>
     </div>
@@ -55,7 +55,7 @@
 
         <div class="col-md-6">
             <div class="card hotel-card shadow-sm mb-4">
-                <img src="assets/images/tokyo1.jpg">
+                <img src="assets/images/Park Hotel Tokyo.jpg">
                 <div class="card-body">
                     <h5>
                         Park Hotel Tokyo
@@ -69,7 +69,7 @@
 
         <div class="col-md-6">
             <div class="card hotel-card shadow-sm mb-4">
-                <img src="assets/images/tokyo2.jpg">
+                <img src="assets/images/Hotel Gracery Shinjuku.webp">
                 <div class="card-body">
                     <h5>
                         Hotel Gracery Shinjuku
@@ -89,6 +89,10 @@
 
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/imagesloaded.js"></script>
+<script src="assets/js/custom.js"></script>
 
 </body>
 </html>

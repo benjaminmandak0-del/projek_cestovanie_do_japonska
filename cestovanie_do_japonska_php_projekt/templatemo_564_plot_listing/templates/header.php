@@ -7,7 +7,7 @@
             <!-- ***** Logo Start ***** -->
            
             <a href="index.php" class="logo">
-              <img src="assets/images/sakurtravel_logo.png" alt="Plot Listing">
+              <img src="assets/images/sakurtravel_logo.png" alt="Sakura Travel">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
