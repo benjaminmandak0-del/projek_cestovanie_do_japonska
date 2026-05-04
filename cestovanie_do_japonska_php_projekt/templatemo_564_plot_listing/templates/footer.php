@@ -23,7 +23,7 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><a href="#">O nás</a></li>
+                  <li><a href="o_nas.php">O nás</a></li>
                   <li><a href="tokyo.php">Tokyo</a></li>
                   <li><a href="osaka.php">Osaka</a></li>
                   <li><a href="kyoto.php">Kyoto</a></li>

@@ -1,0 +1,110 @@
+.about-hero {
+  padding: 80px 0 60px;
+  background: linear-gradient(135deg, rgba(245, 248, 255, 0.98) 0%, rgba(224, 232, 255, 0.98) 100%);
+  color: #1a1f38;
+}
+.about-hero .subtitle {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #5f72ff;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.about-hero h2 {
+  font-size: 3.2rem;
+  line-height: 1.05;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+.about-hero p {
+  max-width: 680px;
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.88);
+}
+.about-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 28px 70px rgba(27, 40, 91, 0.12);
+  margin-bottom: 30px;
+}
+.about-card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.about-card p {
+  color: #666;
+  line-height: 1.8;
+}
+.about-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.about-card ul li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  color: #555;
+}
+.about-card ul li:before {
+  content: "\f058";
+  font-family: "FontAwesome";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #6d5dfc;
+}
+.feature-box {
+  background: #f8f9ff;
+  border-radius: 20px;
+  padding: 28px;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.feature-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(34, 49, 109, 0.15);
+}
+.feature-box i {
+  font-size: 1.8rem;
+  color: #6d5dfc;
+  margin-bottom: 16px;
+}
+.feature-box h5 {
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+.feature-box p {
+  margin-bottom: 0;
+  color: #555;
+}
+.team-callout {
+  background: #f4f6ff;
+  border-radius: 20px;
+  padding: 40px;
+  color: #1a1f38;
+}
+.team-callout h4 {
+  margin-bottom: 18px;
+}
+.team-callout p {
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+.about-image {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(27, 40, 91, 0.14);
+}
+@media (max-width: 991px) {
+  .about-hero h2 {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-hero {
+    padding-top: 60px;
+  }
+}
