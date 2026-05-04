@@ -5,12 +5,12 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="404 - Stránka nenájdená">
+    <meta name="author" content="Sakura Travel">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>404 - Japonko</title>
+    <title>404 - Sakura Travel</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/cookie-banner.css">
+    <link rel="stylesheet" href="assets/css/404.css">
 
   </head>
 
@@ -43,22 +44,32 @@
   <?php include 'templates/header.php'; ?>
   <!-- ***** Header Area End ***** -->
 
-  <div class="container mt-5 mb-5">
-    <div class="row">
-      <div class="col-lg-6 offset-lg-3 text-center">
-        <div class="error-simple">
-          <h1 class="display-1 text-danger mb-4">404</h1>
-          <h2 class="mb-5">Stránka nenájdená</h2>
-          <div>
-            <a href="index.php" class="btn btn-primary btn-lg me-3 mb-3">Domov</a>
-            <a href="tokyo.php" class="btn btn-primary btn-lg me-3 mb-3">Tokio</a>
-            <a href="kyoto.php" class="btn btn-primary btn-lg me-3 mb-3">Kyoto</a>
-            <a href="osaka.php" class="btn btn-primary btn-lg">Osaka</a>
-          </div>
+  <!-- ***** 404 Section Start ***** -->
+  <section class="error-section">
+    <div class="error-container">
+      <h1 class="error-code">404</h1>
+      <h2 class="error-title">Stránka nenájdená</h2>
+      <p class="error-description">Ľutujeme, stránka, ktorú hľadáte, neexistuje. Možno je zmazaná alebo presunutá.</p>
+
+      <div class="error-buttons">
+        <a href="index.php" class="error-btn-primary"><i class="fa fa-home"></i> Späť na domovskú stránku</a>
+        <a href="category.php" class="error-btn-secondary"><i class="fa fa-list"></i> Pozrieť kategórie</a>
+      </div>
+
+      <div>
+        <p style="color: #999; margin-bottom: 16px; font-size: 0.9rem;">Skúste tieto populárne stránky:</p>
+        <div class="error-links">
+          <a href="index.php" class="error-link">Domov</a>
+          <a href="tokyo.php" class="error-link">Tokio</a>
+          <a href="osaka.php" class="error-link">Osaka</a>
+          <a href="kyoto.php" class="error-link">Kjóto</a>
+          <a href="category.php" class="error-link">Kategórie</a>
+          <a href="contact.php" class="error-link">Kontakt</a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  <!-- ***** 404 Section End ***** -->
 
   <?php include 'templates/footer.php'; ?>
 
