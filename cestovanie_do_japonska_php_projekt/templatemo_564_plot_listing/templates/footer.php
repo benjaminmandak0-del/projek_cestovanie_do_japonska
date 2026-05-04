@@ -56,3 +56,14 @@
       </div>
     </div>
 </footer>
+
+<!-- Cookie Banner -->
+<div id="cookieBanner" class="cookie-banner">
+  <div class="cookie-content">
+    <p>Používame súbory cookies na zlepšenie vášho zážitku. Pokračovaním v prehliadaní tejto stránky súhlasíte s našim používaním cookies. <a href="#" target="_blank">Viac informácií o cookiach</a></p>
+  </div>
+  <div class="cookie-buttons">
+    <button id="rejectCookies" class="cookie-btn cookie-btn-reject">Odmietnuť</button>
+    <button id="acceptCookies" class="cookie-btn cookie-btn-accept">Akceptovať</button>
+  </div>
+</div>

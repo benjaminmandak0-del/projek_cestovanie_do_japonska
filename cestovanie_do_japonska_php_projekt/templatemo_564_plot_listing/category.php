@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/templatemo-plot-listing.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/cookie-banner.css">>
 <!--
 
 TemplateMo 564 Plot Listing
@@ -402,6 +403,7 @@ https://templatemo.com/tm-564-plot-listing
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/cookie-banner.js"></script>
 
 
 </body>

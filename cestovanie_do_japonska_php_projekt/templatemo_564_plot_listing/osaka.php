@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/owl.css">
 
     <link rel="stylesheet" href="assets/css/city-pages.css">
+    <link rel="stylesheet" href="assets/css/cookie-banner.css">
 </head>
 
 <body>
@@ -125,6 +126,6 @@
 <script src="assets/js/animation.js"></script>
 <script src="assets/js/imagesloaded.js"></script>
 <script src="assets/js/custom.js"></script>
-
+  <script src="assets/js/cookie-banner.js"></script>
 </body>
 </html>
