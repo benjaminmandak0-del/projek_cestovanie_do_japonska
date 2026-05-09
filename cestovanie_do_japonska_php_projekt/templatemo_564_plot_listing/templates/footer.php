@@ -4,7 +4,7 @@
         <div class="col-lg-4">
           <div class="about">
             <div class="logo">
-              <img src="assets/images/sakurtravel_logo.png" alt="Plot Listing" >
+              <img src="<?= $prefix ?>assets/images/sakurtravel_logo.png" alt="Plot Listing" >
             </div>
             <p>If you consider that <a rel="nofollow" href="https://templatemo.com/tm-564-plot-listing" target="_parent">Plot Listing template</a> is useful for your website, please <a rel="nofollow" href="https://www.paypal.me/templatemo" target="_blank">support us</a> a little via PayPal.</p>
           </div>
@@ -15,18 +15,18 @@
             <div class="row">
               <div class="col-lg-6 col-sm-6">
                 <ul>
-                  <li><a href="category.php">Kategórie</a></li>
-                  <li><a href="listing.php">Zoznam</a></li>
-                  <li><a href="contact.php">Kontaktujte nás</a></li>
-                  <li><a href="add-listing.php">Pridať inzerát</a></li>
+                  <li><a href="<?= $prefix ?>main/category.php">Kategórie</a></li>
+                  <li><a href="<?= $prefix ?>main/listing.php">Zoznam</a></li>
+                  <li><a href="<?= $prefix ?>main/contact.php">Kontaktujte nás</a></li>
+                  <li><a href="<?= $prefix ?>main/add-listing.php">Pridať inzerát</a></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><a href="o_nas.php">O nás</a></li>
-                  <li><a href="tokyo.php">Tokyo</a></li>
-                  <li><a href="osaka.php">Osaka</a></li>
-                  <li><a href="kyoto.php">Kyoto</a></li>
+                  <li><a href="<?= $prefix ?>main/o_nas.php">O nás</a></li>
+                  <li><a href="<?= $prefix ?>secondary/tokyo.php">Tokyo</a></li>
+                  <li><a href="<?= $prefix ?>secondary/osaka.php">Osaka</a></li>
+                  <li><a href="<?= $prefix ?>secondary/kyoto.php">Kyoto</a></li>
                 </ul>
               </div>
             </div>
