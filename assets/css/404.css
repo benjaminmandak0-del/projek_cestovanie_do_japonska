@@ -1,0 +1,129 @@
+.error-section {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(245, 248, 255, 0.98) 0%, rgba(224, 232, 255, 0.98) 100%);
+  padding: 60px 20px;
+}
+
+.error-container {
+  text-align: center;
+  max-width: 600px;
+}
+
+.error-code {
+  font-size: 120px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #5f72ff 0%, #8f9aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  line-height: 1;
+}
+
+.error-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1f38;
+  margin: 20px 0 16px;
+}
+
+.error-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.error-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.error-btn-primary,
+.error-btn-secondary {
+  padding: 12px 28px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+
+.error-btn-primary {
+  background: linear-gradient(135deg, #5f72ff 0%, #6d7dff 100%);
+  color: #fff;
+}
+
+.error-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(95, 114, 255, 0.3);
+  text-decoration: none;
+  color: #fff;
+}
+
+.error-btn-secondary {
+  background: transparent;
+  color: #5f72ff;
+  border: 2px solid #5f72ff;
+}
+
+.error-btn-secondary:hover {
+  background: rgba(95, 114, 255, 0.08);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.error-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.error-link {
+  padding: 10px 16px;
+  background: #f0f2ff;
+  color: #5f72ff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.error-link:hover {
+  background: #5f72ff;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .error-code {
+    font-size: 80px;
+  }
+
+  .error-title {
+    font-size: 2rem;
+  }
+
+  .error-description {
+    font-size: 1rem;
+  }
+
+  .error-section {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+
+  .error-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
