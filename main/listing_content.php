@@ -1,5 +1,5 @@
 <?php
-// extracted content (wrapper-free)
+
 ?>
 
 <!DOCTYPE html>
@@ -156,15 +156,12 @@
 </section>
 
 <?php
-// Ensure app templates/header/footer + listing modal script remain compatible.
-// Note: CRUD panel uses direct mysqli queries.
 $conn = new mysqli("localhost", "root", "", "weboldal");
 if ($conn->connect_error) {
     die('DB error: ' . $conn->connect_error);
 }
 
 
-// Amenities list (for edit modal)
 $amenities = [];
 $amenitiesRes = $conn->query("SELECT id, name FROM amenities ORDER BY name ASC");
 if ($amenitiesRes) {
@@ -173,7 +170,6 @@ if ($amenitiesRes) {
     }
 }
 
-// Hotels (top rated): assume stars is used as rating. Fetch main data + contact + one image.
 $sql = "
     SELECT
       h.id, h.title, h.category, h.stars, h.location, h.city, h.price,
@@ -189,7 +185,6 @@ $hotels = [];
 $res = $conn->query($sql);
 if ($res) {
     while ($h = $res->fetch_assoc()) {
-        // load amenity names for each hotel
         $amenityNames = [];
         $stmt = $conn->prepare("SELECT a.name FROM hotel_amenities ha JOIN amenities a ON a.id = ha.amenity_id WHERE ha.hotel_id = ? ORDER BY a.name ASC");
         $stmt->bind_param('i', $h['id']);
@@ -224,7 +219,6 @@ if ($res) {
 
             <?php foreach ($hotels as $hotel):
                 $city = strtolower((string)($hotel['city'] ?? ''));
-                // map city string to CSS filters: tokyo/osaka/kyoto
                 $cssCity = $city;
                 if (str_contains($city, 'tokyo')) $cssCity = 'tokyo';
                 if (str_contains($city, 'osaka')) $cssCity = 'osaka';
@@ -250,6 +244,16 @@ if ($res) {
                                     <span class="fw-bold">$<?= htmlspecialchars((string)$hotel['price']) ?> / noc</span>
                                     <span class="text-muted">⭐ <?= htmlspecialchars((string)($hotel['stars'] ?? '')) ?></span>
                                 </div>
+
+                                <div class="mt-3">
+                                    <div class="small text-muted"><strong>Kategória:</strong> <?= htmlspecialchars((string)($hotel['category'] ?? '')) ?></div>
+                                    <div class="small text-muted"><strong>Typ izby :</strong> <?= htmlspecialchars((string)($hotel['room_types'] ?? '')) ?></div>
+                                    <div class="small text-muted"><strong>Komentár:</strong> <?= htmlspecialchars((string)($hotel['description'] ?? '')) ?></div>
+                                    <div class="small text-muted"><strong>Pobyt v hoteli:</strong> <?= htmlspecialchars((string)($hotel['checkin'] ?? '')) ?> - <?= htmlspecialchars((string)($hotel['checkout'] ?? '')) ?></div>
+
+                                </div>
+
+
 
                                 <div class="mt-3 d-flex gap-2">
                                     <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#editHotelModal_<?= (int)$hotel['id'] ?>">Edit</button>
