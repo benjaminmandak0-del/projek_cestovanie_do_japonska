@@ -1,21 +1,17 @@
-﻿<?php
-require_once __DIR__ . '/../core/autoload.php';
-
-use Core\Request;
-use Core\View;
-use Pages\ListingPage;
-
-$page = new ListingPage(Request::fromGlobals(), View::fromProjectRoot());
-$page->run();
-
-exit;
+<?php
+// extracted content (wrapper-free)
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <title>Ubytovanie v Japonsku</title>
 
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,10 +24,9 @@ exit;
 </head>
 
 <body>
+  <?php include '../templates/header.php'; ?>
 
-<?php include '../templates/header.php'; ?>
-
-<section class="py-5 bg-light">
+  <section class="py-5 bg-light">
     <div class="container text-center">
         <h1 class="display-5 fw-bold mb-3">Objavte svoje ideálne ubytovanie v Japonsku</h1>
         <p class="lead text-muted mb-4">Vyberte si zo starostlivo vybraných hotelov v Tokiu, Osake a Kjóte.</p>
@@ -47,7 +42,6 @@ exit;
 <section class="py-5">
     <div class="container">
         <div class="row g-4">
-
             <div class="col-lg-6 hotel tokyo">
                 <div class="card shadow-sm border-0 h-100 overflow-hidden">
                     <div class="row g-0 align-items-center">
@@ -155,20 +149,18 @@ exit;
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
 <?php include '../templates/footer.php'; ?>
 
-<!-- Hotel detail modal -->
 <div class="modal fade" id="hotelDetailModal" tabindex="-1" aria-labelledby="hotelDetailModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="hotelDetailModalLabel">Podrobnosti o hoteli</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zatvoriť"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavrieť"></button>
             </div>
             <div class="modal-body">
                 <div class="row g-3">
@@ -198,4 +190,6 @@ exit;
 <script src="../assets/js/listing-modal.js"></script>
 </body>
 </html>
+
+
 

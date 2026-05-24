@@ -1,16 +1,3 @@
-﻿<?php
-require_once __DIR__ . '/../core/autoload.php';
-
-use Core\Request;
-use Core\View;
-use Pages\CategoryPage;
-
-$page = new CategoryPage(Request::fromGlobals(), View::fromProjectRoot());
-$page->run();
-
-exit;
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,7 +31,7 @@ https://templatemo.com/tm-564-plot-listing
 -->
   </head>
 
-<body>
+  <body>
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -77,7 +64,6 @@ https://templatemo.com/tm-564-plot-listing
   </div>
 
 
-
   <div class="category-post">
     <div class="container">
       <div class="row">
@@ -101,6 +87,7 @@ https://templatemo.com/tm-564-plot-listing
                       </div>
 
                     </div>
+
                     <div>
 
                       <div class="thumb">                 
@@ -108,6 +95,7 @@ https://templatemo.com/tm-564-plot-listing
                       </div>
 
                     </div>
+
                     <div>
 
                       <div class="thumb">                 
@@ -115,6 +103,7 @@ https://templatemo.com/tm-564-plot-listing
                       </div>
 
                     </div>
+
                     <div class="last-thumb">
 
                       <div class="thumb">                 
@@ -151,7 +140,7 @@ https://templatemo.com/tm-564-plot-listing
                                 <div class="row">
                                   <div class="col-lg-9">
                                     <h4>Objav najkrajšie miesta Japonska</h4>
-                                    <p>Japonsko je krajina plná kontrastov, kde sa moderné technológie stretávajú s bohatou históriou a tradíciami. Tokio, hlavné mesto Japonska, ponúka návštevníkom nekonečné množstvo atrakcií – od vysokých mrakodrapov a rušných ulíc Shibuye až po pokojné parky a tradičné svätyne. Osaka je známa svojou energiou, zábavou a výbornou gastronómiou, zatiaľ čo Kjóto očarí historickými chrámami, bambusovými lesmi a nádhernými záhradami. Každé z týchto miest má jedinečný charakter a ponúka nezabudnuteľný zážitok.</p>
+                                    <p>Japonsko je krajina plná kontrastov, kde sa moderné technológie stretávajú s bohatou históriou a tradíciami. Tokio, hlavné mesto Japonska, ponúka návštevníkom nekonečné množstvo atrakcií – od vysokých mrakodrapov a rušných ulíc Shibuye až po pokojné parky a tradičné svätyne. Osaka je známa svojou energiou, zábavou a výbornou gastronómiou, zatiaľ čo Kjóto očarí historickými chrámami, bambusovými lesmi a nádhernými záhradami. Každé z týchto miest má jedinečný charakter a ponúka nezabudnuteľné zážitky.</p>
                                   </div>
                                   <div class="col-lg-3">
                                     <div class="text-icon">
@@ -167,7 +156,7 @@ https://templatemo.com/tm-564-plot-listing
                                 <div class="row">
                                   <div class="col-lg-12">
                                     <h4>Prečo navštíviť tieto miesta?</h4>
-                                    <p>Každá destinácia v Japonsku prináša niečo výnimočné. Môžeš objavovať futuristické štvrte, obdivovať historické pamiatky alebo relaxovať v prírode. Cesta po Japonsku je dobrodružstvo plné objavovania nových kultúrnych zážitkov a nádherných miest.</p>
+                                    <p>Každá destinácia v Japonsku prináša niečo výnimočné. Môžeš objavovať futuristické štvrte, obdivovať historické pamiatky alebo relaxovať v prúde. Cesta po Japonsku je dobrodružstvo plné objavovania nových kultúrnych zážitkov a nádherných miest.</p>
                                     <span class="list-item">Pred cestou si skontroluj platnosť pasu a potrebné cestovné dokumenty.
                                     <br>Odporúčame rezervovať letenky a ubytovanie vopred pre lepšie ceny.
                                     <br>Nezabudni si naplánovať dopravu medzi mestami a atrakciami.</span>
@@ -178,7 +167,7 @@ https://templatemo.com/tm-564-plot-listing
                           </div>
                         </div>
                       </div>
-                    </li>                 
+                    </li>
                     <li>
                       <div>
                         <div class="thumb">
@@ -206,27 +195,12 @@ https://templatemo.com/tm-564-plot-listing
                                     <h4>Ochutnaj pravé chute Japonska</h4>
                                     <p>Japonská kuchyňa patrí medzi najobľúbenejšie na svete a je známa svojou čerstvosťou, kvalitou a estetickým servírovaním. Medzi najznámejšie jedlá patrí sushi, ramen, tempura, udon či yakitori. Každý región Japonska má svoje vlastné špeciality – v Osake môžeš ochutnať takoyaki a okonomiyaki, v Tokiu čerstvé sushi a v Kjóte tradičné jedlá kaiseki. Jedlo v Japonsku nie je len o chuti, ale aj o zážitku a tradícii.</p>
                                     <br>
-                                    
-                                    
                                   </div>
                                   <div class="col-lg-3">
                                     <div class="text-icon">
                                       <h4><img src="../assets/images/listing-icon-heading.png" alt=""> Užitočné informácie pre gurmánov</h4>
                                     </div>
                                     <span class="list-item">Ochutnaj miestne špeciality v každom meste.<br>Rezervácia v populárnych reštauráciách je odporúčaná.<br>Nezabudni vyskúšať tradičné japonské dezerty.</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
-                              <div class="general-info">
-                                <div class="row">
-                                  <div class="col-lg-12">
-                                    <h4>Jedlo ako kultúrny zážitok</h4>
-                                    <p>Reštaurácie v Japonsku venujú veľkú pozornosť detailom a kvalite ingrediencií. Ochutnať miestne jedlá je dôležitou súčasťou každej cesty a pomáha lepšie spoznať kultúru krajiny..</p>
-                                    <span class="list-item">Tento týždeň: 500+ odporúčaných jedál
-                                    <br>Tento mesiac: 4 000+ návštev reštaurácií
-                                    <br>Tento rok: 35 000+ ochutnaných jedál</span>
                                   </div>
                                 </div>
                               </div>
@@ -260,26 +234,13 @@ https://templatemo.com/tm-564-plot-listing
                                 <div class="row">
                                   <div class="col-lg-9">
                                     <h4>Cestuj rýchlo a pohodlne</h4>
-                                    <p>Japonsko má jeden z najmodernejších a najspoľahlivejších dopravných systémov na svete. Slávne rýchlovlaky Shinkansen dokážu cestovať vysokou rýchlosťou a spájajú veľké mestá v rekordnom čase. Mestská doprava v Tokiu, Osake či Kjóte zahŕňa metro, autobusy a miestne vlaky, ktoré sú známe svojou čistotou a presnosťou. Vďaka jasnému označeniu a mapám je cestovanie jednoduché aj pre turistov.</p>
+                                    <p>Japonsko má jeden z najmodernejších a najspoľahlivejších dopravných systémov na svete. Slávne rýchlovlaky Shinkansen dokážu cestovať vysokou rýchlosťou a spájajú veľké mestá. Mestská doprava v Tokiu, Osake či Kjóte zahŕňa metro, autobusy a miestne vlaky, ktoré sú známe svojou presnosťou a spoľahlivosťou. Vďaka jasnému označeniu a mapám je cestovanie jednoduché aj pre turistov.</p>
                                   </div>
                                   <div class="col-lg-3">
                                     <div class="text-icon">
                                       <h4><img src="../assets/images/listing-icon-heading.png" alt="">Užitočné informácie o doprave</h4>
                                     </div>
                                     <span class="list-item">Kúp si Japan Rail Pass pre lacnejšie cestovanie.<br>Sleduj cestovné poriadky vlakov a metra.<br>Priprav si IC kartu na jednoduché platenie.</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
-                              <div class="general-info">
-                                <div class="row">
-                                  <div class="col-lg-12">
-                                    <h4>Bez stresu po celej krajine</h4>
-                                    <p>S Japan Rail Pass môžeš cestovať výhodnejšie a navštíviť viac miest počas jednej dovolenky. Japonská doprava je ideálna pre pohodlné a bezpečné cestovanie bez zbytočného stresu.</p>
-                                    <span class="list-item">Tento týždeň: 800+ jázd vlakom
-                                    <br>Tento mesiac: 6 500+ ciest metrom
-                                    <br>Tento rok: 50 000+ kilometrov precestovaných</span>
                                   </div>
                                 </div>
                               </div>
@@ -312,27 +273,14 @@ https://templatemo.com/tm-564-plot-listing
                               <div class="description">
                                 <div class="row">
                                   <div class="col-lg-9">
-                                    <h4>Komfort a tradičný zážitok</h4>
+                                    <h4>Komfort a tradičné zážitky</h4>
                                     <p>Japonsko ponúka širokú škálu možností ubytovania pre všetkých cestovateľov. Moderné hotely v centre miest poskytujú vysoký komfort, moderné vybavenie a krásny výhľad na mesto. Ak chceš zažiť tradičnú atmosféru, môžeš si vybrať ryokan – tradičný japonský hostinec s tatami izbami, futonmi a miestnou kuchyňou. Niektoré ryokany ponúkajú aj onsen, tradičné horúce kúpele.</p>
                                   </div>
                                   <div class="col-lg-3">
                                     <div class="text-icon">
-                                      <h4><img src="../assets/images/listing-icon-heading.png" alt=""> Užitočné informácie o ubytovaní</h4>
+                                      <h4><img src="../assets/images/listing-icon-heading.png" alt=""> Užitečné informácie o ubytovaní</h4>
                                     </div>
                                     <span class="list-item">Rezervuj hotel alebo ryokan vopred.<br>Skontroluj lokalitu a dostupnosť dopravy.<br>Vyber si ubytovanie podľa svojho rozpočtu.</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
-                              <div class="general-info">
-                                <div class="row">
-                                  <div class="col-lg-12">
-                                    <h4>Vyber si podľa svojho štýlu</h4>
-                                    <p>Či už hľadáš luxusný hotel, cenovo dostupné ubytovanie alebo autentický japonský zážitok, Japonsko ponúka možnosti pre každého návštevníka.</p>
-                                    <span class="list-item">Tento týždeň: 200+ rezervácií
-                                    <br>Tento mesiac: 1 500+ rezervovaných nocí
-                                    <br>Tento rok: 12 000+ spokojných hostí</span>
                                   </div>
                                 </div>
                               </div>
@@ -377,19 +325,6 @@ https://templatemo.com/tm-564-plot-listing
                                 </div>
                               </div>
                             </div>
-                            <div class="col-lg-12">
-                              <div class="general-info">
-                                <div class="row">
-                                  <div class="col-lg-12">
-                                    <h4>Nezabudnuteľné zážitky</h4>
-                                    <p>Zaži tradičný čajový obrad, obleč si kimono alebo sa zúčastni na jednom z mnohých festivalov. Kultúra Japonska ponúka jedinečné momenty, ktoré si zapamätáš na celý život.</p>
-                                    <span class="list-item">Tento týždeň: 100+ navštívených chrámov
-                                    <br>Tento mesiac: 900+ kultúrnych zážitkov
-                                    <br>Tento rok: 8 000+ objavených tradícií</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -406,7 +341,6 @@ https://templatemo.com/tm-564-plot-listing
 
 <?php include '../templates/footer.php'; ?>
 
-
   <!-- Scripts -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -417,7 +351,7 @@ https://templatemo.com/tm-564-plot-listing
   <script src="../assets/js/tabs.js"></script>
   <script src="../assets/js/cookie-banner.js"></script>
 
-
 </body>
 
 </html>
+
