@@ -26,7 +26,7 @@
 <body>
   <?php include '../templates/header.php'; ?>
 
-  <section class="py-5 bg-light">
+<section class="py-5 bg-light">
     <div class="container text-center">
         <h1 class="display-5 fw-bold mb-3">Objavte svoje ideálne ubytovanie v Japonsku</h1>
         <p class="lead text-muted mb-4">Vyberte si zo starostlivo vybraných hotelov v Tokiu, Osake a Kjóte.</p>
@@ -42,6 +42,7 @@
 <section class="py-5">
     <div class="container">
         <div class="row g-4">
+
             <div class="col-lg-6 hotel tokyo">
                 <div class="card shadow-sm border-0 h-100 overflow-hidden">
                     <div class="row g-0 align-items-center">
@@ -149,11 +150,132 @@
                     </div>
                 </div>
             </div>
+
+        </div>
+    </div>
+</section>
+
+<?php
+// Ensure app templates/header/footer + listing modal script remain compatible.
+// Note: CRUD panel uses direct mysqli queries.
+$conn = new mysqli("localhost", "root", "", "weboldal");
+if ($conn->connect_error) {
+    die('DB error: ' . $conn->connect_error);
+}
+
+
+// Amenities list (for edit modal)
+$amenities = [];
+$amenitiesRes = $conn->query("SELECT id, name FROM amenities ORDER BY name ASC");
+if ($amenitiesRes) {
+    while ($row = $amenitiesRes->fetch_assoc()) {
+        $amenities[] = $row;
+    }
+}
+
+// Hotels (top rated): assume stars is used as rating. Fetch main data + contact + one image.
+$sql = "
+    SELECT
+      h.id, h.title, h.category, h.stars, h.location, h.city, h.price,
+      h.rooms, h.checkin, h.checkout, h.room_types, h.description,
+      c.contact_name, c.contact_email, c.contact_phone, c.website,
+      (SELECT image_path FROM hotel_images hi WHERE hi.hotel_id = h.id ORDER BY id ASC LIMIT 1) AS image_path
+    FROM hotels h
+    LEFT JOIN contacts c ON c.hotel_id = h.id
+    ORDER BY h.stars DESC, h.price ASC
+";
+
+$hotels = [];
+$res = $conn->query($sql);
+if ($res) {
+    while ($h = $res->fetch_assoc()) {
+        // load amenity names for each hotel
+        $amenityNames = [];
+        $stmt = $conn->prepare("SELECT a.name FROM hotel_amenities ha JOIN amenities a ON a.id = ha.amenity_id WHERE ha.hotel_id = ? ORDER BY a.name ASC");
+        $stmt->bind_param('i', $h['id']);
+        $stmt->execute();
+        $r2 = $stmt->get_result();
+        while ($ar = $r2->fetch_assoc()) {
+            $amenityNames[] = $ar['name'];
+        }
+        $h['amenity_names'] = $amenityNames;
+
+        $hotels[] = $h;
+    }
+}
+
+?>
+
+<section class="py-5">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-between mb-3">
+            <h2 class="fw-bold mb-2">Najlepšie hodnotené hotely (CRUD)</h2>
+            <div class="d-flex gap-2">
+                <a class="btn btn-outline-danger" href="../add-listing.php">+ Pridať hotel</a>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <?php if (count($hotels) === 0): ?>
+                <div class="col-12">
+                    <div class="alert alert-warning mb-0">Zatiaľ nemáte v databáze žiadne hotely. Použite „Pridať hotel“.</div>
+                </div>
+            <?php endif; ?>
+
+            <?php foreach ($hotels as $hotel):
+                $city = strtolower((string)($hotel['city'] ?? ''));
+                // map city string to CSS filters: tokyo/osaka/kyoto
+                $cssCity = $city;
+                if (str_contains($city, 'tokyo')) $cssCity = 'tokyo';
+                if (str_contains($city, 'osaka')) $cssCity = 'osaka';
+                if (str_contains($city, 'kyoto')) $cssCity = 'kyoto';
+
+                $img = $hotel['image_path'] ? ('../uploads/' . $hotel['image_path']) : '../assets/images/listing-01.jpg';
+            ?>
+                <div class="col-lg-6 hotel <?= htmlspecialchars($cssCity) ?>">
+                    <div class="card shadow-sm border-0 h-100 overflow-hidden">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-5">
+                                <img src="<?= htmlspecialchars($img) ?>" class="img-fluid h-100 object-fit-cover" alt="<?= htmlspecialchars((string)$hotel['title']) ?>" onclick="showHotelPopup(this)" style="cursor:pointer;">
+                            </div>
+                            <div class="col-md-7 p-4">
+                                <div class="d-flex justify-content-between align-items-start gap-2 mb-1">
+                                    <h4 class="mb-2"><?= htmlspecialchars((string)$hotel['title']) ?></h4>
+                                    <span class="badge bg-danger"><?= htmlspecialchars((string)($hotel['city'] ?? '')) ?></span>
+                                </div>
+
+                                <p class="text-muted mb-3"><?= htmlspecialchars((string)($hotel['description'] ?? '')) ?></p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">$<?= htmlspecialchars((string)$hotel['price']) ?> / noc</span>
+                                    <span class="text-muted">⭐ <?= htmlspecialchars((string)($hotel['stars'] ?? '')) ?></span>
+                                </div>
+
+                                <div class="mt-3 d-flex gap-2">
+                                    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#editHotelModal_<?= (int)$hotel['id'] ?>">Edit</button>
+                                    <form method="POST" action="../secondary/hotels_crud.php" onsubmit="return confirm('Naozaj chcete odstrániť tento hotel?');" class="m-0">
+                                        <input type="hidden" name="action" value="delete">
+                                        <input type="hidden" name="hotel_id" value="<?= (int)$hotel['id'] ?>">
+                                        <input type="hidden" name="redirect" value="../listing.php">
+                                        <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <?php
+                $hotelForModal = $hotel;
+                include __DIR__ . '/listing_crud_modal.php';
+                ?>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
 
 <?php include '../templates/footer.php'; ?>
+
 
 <div class="modal fade" id="hotelDetailModal" tabindex="-1" aria-labelledby="hotelDetailModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">

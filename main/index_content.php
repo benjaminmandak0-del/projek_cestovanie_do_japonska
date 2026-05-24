@@ -345,7 +345,178 @@ https://templatemo.com/tm-564-plot-listing
                 </div>
               </div>
             </div>
+            <!-- *****kyoto ***** -->
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="../assets/images/kyoto.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
 
+                      <a href="#"><h4>Kyoto</h4></a>
+                      <h6>by: Sale Agent</h6>
+                      <ul class="rate">
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li>(24) Reviews</li>
+                      </ul>
+                      <p>Kyoto je srdcom tradičného Japonska s tisíckami chrámov a svätyňami. Domov geiš a čaju, zachováva starobylú kultúru.</p>
+                      <div class="main-white-button">
+                        <a href="../secondary/kyoto.php"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="../assets/images/Park Hyatt Kyoto.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>Park Hyatt Kyoto</h4></a>
+                      <h6>by: Park Hyatt</h6>
+                      <ul class="rate">
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li>(32) Reviews</li>
+                      </ul>
+                      <span class="price"><div class="icon"><img src="../assets/images/eurosign.png" alt=""></div>450€/noc</span>
+                      <span class="details">Amenities: <em>Spa, Traditional Tea House, Garden</em></span>
+                      <ul class="info">
+                        <li><img src="../assets/images/bedroom.png" alt=""> Luxury Suites</li>
+                        <li><img src="../assets/images/spa.png" alt=""> Concierge Service</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="../assets/images/The Celestine Kyoto Gion.webp" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>Hotel The Celestine Kyoto Gion</h4></a>
+                      <h6>by: The Celestine Hotel</h6>
+                      <ul class="rate">
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li>(40) Reviews</li>
+                      </ul>
+                      <span class="price"><div class="icon"><img src="../assets/images/eurosign.png" alt=""></div>380€/noc</span>
+                      <span class="details">Amenities: <em>Kaiseki Dining, Onsen Bath, Kimono Rental</em></span>
+                      <ul class="info">
+                        <li><img src="../assets/images/bedroom.png" alt=""> Traditional Rooms</li>
+                        <li><img src="../assets/images/spa.png" alt=""> 24hr Concierge</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ***** Osaka ***** -->
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="../assets/images/osaka.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+
+                      <a href="#"><h4>Osaka</h4></a>
+                      <h6>by: Sale Agent</h6>
+                      <ul class="rate">
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li>(24) Reviews</li>
+                      </ul>
+                      <p>Osaka je kuchynským rajom Japonska známa street food a hradom. Živá metropola s jedinečnou atmosférou.</p>
+                      <div class="main-white-button">
+                        <a href="../secondary/osaka.php"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="../assets/images/Swissotel Nankai Osaka.webp" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>Swissôtel Nankai Osaka</h4></a>
+                      <h6>by: Swissôtel</h6>
+                      <ul class="rate">
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li>(15) Reviews</li>
+                      </ul>
+                      <span class="price"><div class="icon"><img src="../assets/images/eurosign.png" alt=""></div>260€/noc</span>
+                      <span class="details">Amenities: <em>Pool, Fitness, Multiple Restaurants</em></span>
+                      <ul class="info">
+                        <li><img src="../assets/images/bedroom.png" alt=""> Executive Rooms</li>
+                        <li><img src="../assets/images/spa.png" alt=""> Room Service & Laundry</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="../assets/images/Hotel Universal Port.webp" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>Hotel Universal Port</h4></a>
+                      <h6>by: Universal Studios Hotel</h6>
+                      <ul class="rate">
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li>(20) Reviews</li>
+                      </ul>
+                      <span class="price"><div class="icon"><img src="../assets/images/eurosign.png" alt=""></div>180€/noc</span>
+                      <span class="details">Amenities: <em>Theme Park Access, Pool, Kids Club</em></span>
+                      <ul class="info">
+                        <li><img src="../assets/images/bedroom.png" alt=""> Family Rooms</li>
+                        <li><img src="../assets/images/spa.png" alt=""> Theme Park Packages</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="add-listing.php"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -354,7 +525,6 @@ https://templatemo.com/tm-564-plot-listing
 
   <?php include '../templates/footer.php'; ?>
 
-  <!-- Scripts -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/owl-carousel.js"></script>
@@ -366,4 +536,5 @@ https://templatemo.com/tm-564-plot-listing
 </body>
 
 </html>
+
 
