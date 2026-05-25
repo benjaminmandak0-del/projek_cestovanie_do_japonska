@@ -204,7 +204,7 @@ if ($res) {
 <section class="py-5">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-between mb-3">
-            <h2 class="fw-bold mb-2">Najlepšie hodnotené hotely (CRUD)</h2>
+            <h2 class="fw-bold mb-2">Najlepšie hodnotené hotely</h2>
             <div class="d-flex gap-2">
                 <a class="btn btn-outline-danger" href="../add-listing.php">+ Pridať hotel</a>
             </div>
