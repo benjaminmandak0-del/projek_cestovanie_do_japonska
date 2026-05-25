@@ -1,10 +1,18 @@
+<?php
+    if (!isset($assetPrefix)) {
+        $currentPage = basename($_SERVER['PHP_SELF']);
+        $section = basename(dirname($_SERVER['SCRIPT_NAME']));
+        $assetPrefix = '../';
+        $mainPrefix = $section === 'secondary' ? '../main/' : '';
+    }
+?>
 <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
           <div class="about">
             <div class="logo">
-              <img src="<?= $prefix ?>assets/images/sakurtravel_logo.png" alt="Plot Listing" >
+              <img src="<?= $assetPrefix ?>assets/images/sakurtravel_logo.png" alt="Plot Listing" >
             </div>
             <p>If you consider that <a rel="nofollow" href="https://templatemo.com/tm-564-plot-listing" target="_parent">Plot Listing template</a> is useful for your website, please <a rel="nofollow" href="https://www.paypal.me/templatemo" target="_blank">support us</a> a little via PayPal.</p>
           </div>
@@ -15,18 +23,18 @@
             <div class="row">
               <div class="col-lg-6 col-sm-6">
                 <ul>
-                  <li><a href="<?= $prefix ?>main/category.php">Kategórie</a></li>
-                  <li><a href="<?= $prefix ?>main/listing.php">Zoznam</a></li>
-                  <li><a href="<?= $prefix ?>main/contact.php">Kontaktujte nás</a></li>
-                  <li><a href="<?= $prefix ?>main/add-listing.php">Pridať inzerát</a></li>
+                  <li><a href="<?= $mainPrefix ?>category.php">Kategórie</a></li>
+                  <li><a href="<?= $mainPrefix ?>listing.php">Zoznam</a></li>
+                  <li><a href="<?= $mainPrefix ?>contact.php">Kontaktujte nás</a></li>
+                  <li><a href="<?= $mainPrefix ?>add-listing.php">Pridať inzerát</a></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><a href="<?= $prefix ?>main/o_nas.php">O nás</a></li>
-                  <li><a href="<?= $prefix ?>secondary/tokyo.php">Tokyo</a></li>
-                  <li><a href="<?= $prefix ?>secondary/osaka.php">Osaka</a></li>
-                  <li><a href="<?= $prefix ?>secondary/kyoto.php">Kyoto</a></li>
+                  <li><a href="<?= $mainPrefix ?>o_nas.php">O nás</a></li>
+                  <li><a href="<?= $section === 'secondary' ? '' : 'secondary/' ?>tokyo.php">Tokyo</a></li>
+                  <li><a href="<?= $section === 'secondary' ? '' : 'secondary/' ?>osaka.php">Osaka</a></li>
+                  <li><a href="<?= $section === 'secondary' ? '' : 'secondary/' ?>kyoto.php">Kyoto</a></li>
                 </ul>
               </div>
             </div>
