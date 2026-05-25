@@ -1,16 +1,3 @@
-<?php
-require_once __DIR__ . '/../core/autoload.php';
-
-use Core\Request;
-use Core\View;
-use Pages\AddListingPage;
-
-$page = new AddListingPage(Request::fromGlobals(), View::fromProjectRoot());
-$page->run();
-
-exit;
-?>
-
 <!DOCTYPE html>
 <html lang="sk">
 <head>

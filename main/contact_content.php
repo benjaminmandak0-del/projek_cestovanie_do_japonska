@@ -1,5 +1,5 @@
 <?php
-// extracted content (wrapper-free)
+
 ?>
 
 <!DOCTYPE html>
@@ -96,6 +96,3 @@
   <script src="../assets/js/cookie-banner.js"></script>
 </body>
 </html>
-
-
-

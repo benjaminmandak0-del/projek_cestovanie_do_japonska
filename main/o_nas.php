@@ -12,10 +12,9 @@
 
     <title>O nás | Sakura Travel</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Additional CSS Files -->
+
     <link rel="stylesheet" href="../assets/css/fontawesome.css">
     <link rel="stylesheet" href="../assets/css/templatemo-plot-listing.css">
     <link rel="stylesheet" href="../assets/css/animated.css">
@@ -26,7 +25,6 @@
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -37,11 +35,9 @@
       </div>
     </div>
   </div>
-  <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
   <?php include '../templates/header.php'; ?>
-  <!-- ***** Header Area End ***** -->
+
 
   <div class="about-hero">
     <div class="container">
@@ -117,7 +113,7 @@
   <?php include '../templates/footer.php'; ?>
 
 
-  <!-- Scripts -->
+
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/owl-carousel.js"></script>
