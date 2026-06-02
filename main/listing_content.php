@@ -1,4 +1,16 @@
 <?php
+$dbConnected = false;
+$dbError = '';
+
+require_once __DIR__ . '/../config/database.php';
+
+try {
+    $conn = create_db_connection();
+    $dbConnected = true;
+} catch (mysqli_sql_exception $e) {
+    $dbError = $e->getMessage();
+    $dbConnected = false;
+}
 
 ?>
 
@@ -156,46 +168,66 @@
 </section>
 
 <?php
-$conn = new mysqli("localhost", "root", "", "weboldal");
-if ($conn->connect_error) {
-    die('DB error: ' . $conn->connect_error);
-}
-
-
+// Adatbázis csatlakozás
 $amenities = [];
-$amenitiesRes = $conn->query("SELECT id, name FROM amenities ORDER BY name ASC");
-if ($amenitiesRes) {
-    while ($row = $amenitiesRes->fetch_assoc()) {
-        $amenities[] = $row;
-    }
-}
-
-$sql = "
-    SELECT
-      h.id, h.title, h.category, h.stars, h.location, h.city, h.price,
-      h.rooms, h.checkin, h.checkout, h.room_types, h.description,
-      c.contact_name, c.contact_email, c.contact_phone, c.website,
-      (SELECT image_path FROM hotel_images hi WHERE hi.hotel_id = h.id ORDER BY id ASC LIMIT 1) AS image_path
-    FROM hotels h
-    LEFT JOIN contacts c ON c.hotel_id = h.id
-    ORDER BY h.stars DESC, h.price ASC
-";
-
 $hotels = [];
-$res = $conn->query($sql);
-if ($res) {
-    while ($h = $res->fetch_assoc()) {
-        $amenityNames = [];
-        $stmt = $conn->prepare("SELECT a.name FROM hotel_amenities ha JOIN amenities a ON a.id = ha.amenity_id WHERE ha.hotel_id = ? ORDER BY a.name ASC");
-        $stmt->bind_param('i', $h['id']);
-        $stmt->execute();
-        $r2 = $stmt->get_result();
-        while ($ar = $r2->fetch_assoc()) {
-            $amenityNames[] = $ar['name'];
-        }
-        $h['amenity_names'] = $amenityNames;
 
-        $hotels[] = $h;
+// Connection already established at the top of this file.
+// $dbConnected is true when the page continues normally.
+
+if ($dbConnected) {
+    // Amenitások lekérése
+    try {
+        $amenitiesRes = $conn->query("SELECT id, name FROM amenities ORDER BY name ASC");
+        if ($amenitiesRes) {
+            while ($row = $amenitiesRes->fetch_assoc()) {
+                $amenities[] = $row;
+            }
+        }
+    } catch (mysqli_sql_exception $e) {
+        // Ha az amenities tábla nem létezik, akkor továbbra is megjelenik a lista.
+        $amenities = [];
+    }
+
+    // Hotelők lekérése az adatbázisból
+    try {
+        $sql = "
+            SELECT
+              h.id, h.title, h.category, h.stars, h.location, h.city, h.price,
+              h.rooms, h.checkin, h.checkout, h.room_types, h.description,
+              c.contact_name, c.contact_email, c.contact_phone, c.website,
+              (SELECT image_path FROM hotel_images hi WHERE hi.hotel_id = h.id ORDER BY id ASC LIMIT 1) AS image_path
+            FROM hotels h
+            LEFT JOIN contacts c ON c.hotel_id = h.id
+            ORDER BY h.stars DESC, h.price ASC
+        ";
+
+        $res = $conn->query($sql);
+        if ($res) {
+            while ($h = $res->fetch_assoc()) {
+                $amenityNames = [];
+
+                try {
+                    $stmt = $conn->prepare("SELECT a.name FROM hotel_amenities ha JOIN amenities a ON a.id = ha.amenity_id WHERE ha.hotel_id = ? ORDER BY a.name ASC");
+                    if ($stmt) {
+                        $stmt->bind_param('i', $h['id']);
+                        $stmt->execute();
+                        $r2 = $stmt->get_result();
+                        while ($ar = $r2->fetch_assoc()) {
+                            $amenityNames[] = $ar['name'];
+                        }
+                    }
+                } catch (mysqli_sql_exception $e) {
+                    // Ha a hotel_amenities vagy amenities tábla hiányzik, akkor simán továbbmegyünk.
+                }
+
+                $h['amenity_names'] = $amenityNames;
+                $hotels[] = $h;
+            }
+        }
+    } catch (mysqli_sql_exception $e) {
+        // Ha a hotels tábla nem létezik, akkor nem töltünk be dinamikus hotel adatokat.
+        $hotels = [];
     }
 }
 
@@ -205,13 +237,24 @@ if ($res) {
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-between mb-3">
             <h2 class="fw-bold mb-2">Najlepšie hodnotené hotely</h2>
-            <div class="d-flex gap-2">
-                <a class="btn btn-outline-danger" href="../add-listing.php">+ Pridať hotel</a>
-            </div>
+            <?php if ($dbConnected): ?>
+                <div class="d-flex gap-2">
+                    <a class="btn btn-outline-danger" href="../add-listing.php">+ Pridať hotel</a>
+                </div>
+            <?php endif; ?>
         </div>
 
         <div class="row g-4">
-            <?php if (count($hotels) === 0): ?>
+            <?php if (!$dbConnected): ?>
+                <div class="col-12">
+                    <div class="alert alert-danger mb-0">
+                        <strong>Chyba pripojenia k databáze:</strong> Stránka sa nemôže pripojiť k databáze. Skontrolujte, prosím, nastavenia databázy.
+                        <?php if ($dbError): ?>
+                            <br><small class="text-muted">Chyba: <?= htmlspecialchars($dbError) ?></small>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            <?php elseif (count($hotels) === 0): ?>
                 <div class="col-12">
                     <div class="alert alert-warning mb-0">Zatiaľ nemáte v databáze žiadne hotely. Použite „Pridať hotel“.</div>
                 </div>
@@ -255,6 +298,7 @@ if ($res) {
 
 
 
+                                <?php if ($dbConnected && isset($hotel['id'])): ?>
                                 <div class="mt-3 d-flex gap-2">
                                     <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#editHotelModal_<?= (int)$hotel['id'] ?>">Edit</button>
                                     <form method="POST" action="../secondary/hotels_crud.php" onsubmit="return confirm('Naozaj chcete odstrániť tento hotel?');" class="m-0">
@@ -264,14 +308,17 @@ if ($res) {
                                         <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
                                     </form>
                                 </div>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <?php
-                $hotelForModal = $hotel;
-                include __DIR__ . '/listing_crud_modal.php';
+                if ($dbConnected && isset($hotel['id'])) {
+                    $hotelForModal = $hotel;
+                    include __DIR__ . '/listing_crud_modal.php';
+                }
                 ?>
             <?php endforeach; ?>
         </div>
