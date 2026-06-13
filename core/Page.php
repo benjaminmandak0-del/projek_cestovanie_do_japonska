@@ -17,7 +17,7 @@ abstract class Page
 
     protected function handle(): void
     {
-        // default no-op
+        
     }
 
     abstract protected function render(): void;

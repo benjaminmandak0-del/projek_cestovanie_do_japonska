@@ -17,9 +17,9 @@
 
 <body>
 
-  <!-- ***** Header Area Start ***** -->
+  
   <?php include '../templates/header.php'; ?>
-  <!-- ***** Header Area End ***** -->
+  
 
   <div class="page-heading">
     <div class="container">

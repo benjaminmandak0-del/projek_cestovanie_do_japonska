@@ -168,15 +168,14 @@ try {
 </section>
 
 <?php
-// Adatbázis csatlakozás
+
 $amenities = [];
 $hotels = [];
 
-// Connection already established at the top of this file.
-// $dbConnected is true when the page continues normally.
+
 
 if ($dbConnected) {
-    // Amenitások lekérése
+    
     try {
         $amenitiesRes = $conn->query("SELECT id, name FROM amenities ORDER BY name ASC");
         if ($amenitiesRes) {
@@ -185,11 +184,9 @@ if ($dbConnected) {
             }
         }
     } catch (mysqli_sql_exception $e) {
-        // Ha az amenities tábla nem létezik, akkor továbbra is megjelenik a lista.
         $amenities = [];
     }
 
-    // Hotelők lekérése az adatbázisból
     try {
         $sql = "
             SELECT
@@ -218,7 +215,7 @@ if ($dbConnected) {
                         }
                     }
                 } catch (mysqli_sql_exception $e) {
-                    // Ha a hotel_amenities vagy amenities tábla hiányzik, akkor simán továbbmegyünk.
+                    
                 }
 
                 $h['amenity_names'] = $amenityNames;
@@ -226,7 +223,6 @@ if ($dbConnected) {
             }
         }
     } catch (mysqli_sql_exception $e) {
-        // Ha a hotels tábla nem létezik, akkor nem töltünk be dinamikus hotel adatokat.
         $hotels = [];
     }
 }
