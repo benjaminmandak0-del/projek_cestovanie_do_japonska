@@ -32,9 +32,9 @@
               <div class="col-lg-6">
                 <ul>
                   <li><a href="<?= $mainPrefix ?>o_nas.php">O nás</a></li>
-                  <li><a href="<?= $section === 'secondary' ? '' : 'secondary/' ?>tokyo.php">Tokyo</a></li>
-                  <li><a href="<?= $section === 'secondary' ? '' : 'secondary/' ?>osaka.php">Osaka</a></li>
-                  <li><a href="<?= $section === 'secondary' ? '' : 'secondary/' ?>kyoto.php">Kyoto</a></li>
+                  <li><a href="<?= $section === 'secondary' ? '' : '../secondary/' ?>tokyo.php">Tokyo</a></li>
+                  <li><a href="<?= $section === 'secondary' ? '' : '../secondary/' ?>osaka.php">Osaka</a></li>
+                  <li><a href="<?= $section === 'secondary' ? '' : '../secondary/' ?>kyoto.php">Kyoto</a></li>
                 </ul>
               </div>
             </div>
