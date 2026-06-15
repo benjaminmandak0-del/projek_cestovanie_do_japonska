@@ -1,6 +1,3 @@
--- database.sql
--- Import this file in phpMyAdmin or MySQL to create the app database schema.
-
 CREATE DATABASE IF NOT EXISTS `weboldal`
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_unicode_ci;
